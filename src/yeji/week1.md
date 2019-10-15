@@ -1,7 +1,5 @@
-## 알고리즘과제
-### 프로그래머스 프린터
-<pre>
-<code>
+# 프로그래머스 프린터
+```python
 def solution(priorities.location):
 
     while len(priorities) != 0:
@@ -33,14 +31,11 @@ def solution(priorities.location):
                 location -= 1
 
         return answer
-</code>
-</pre>
+```
 
 
-<hr/>
-### Leetcode- Number of Recent Calls
-<pre>
-<code>
+# Leetcode- Number of Recent Calls
+```python
 class Solution:
 	def isValid(self, s:str):
 		self.characters = {'(':')','{':'}','[':']'}
@@ -60,14 +55,10 @@ class Solution:
 				return False
 			else:
 				return True
-</code>
-</pre>
-<hr/>
+```
+# Leetcode - MinStack
 
-### Leetcode - MinStack
-
-<pre>
-<code>
+```python
 class MinStack:
 
     def __init__(self):
@@ -101,32 +92,22 @@ class MinStack:
     def getMin(self) -> int:
 
        return self.data[-1][1]
-</code>
-</pre>
-
-<hr/>
+```
 
 
-### LeetCode - Number of recent calls
-<pre>
-<code>
+# LeetCode - Number of recent calls
 
-</code>
-</pre>
+```python
 
-### LeetCode - Maximum SubArray
-<pre>
-<code>
-</code>
-</pre>
+```
 
-### LeetCode - Climbing Stairs
-<pre>
-<code>
-</code>
-</pre>
+# LeetCode - Maximum SubArray
+```python
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NjkxOTM1Nyw2NDk2MjQ3ODcsLTEyMT
-g4NzEyMjZdfQ==
--->
+```
+
+# LeetCode - Climbing Stairs
+
+```python
+
+```
