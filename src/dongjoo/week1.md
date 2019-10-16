@@ -1,7 +1,5 @@
+# recent-counter
 ```python
-
-# ----------------Queue
-
 # ----Question 1
 # 1st attempt
 from collections import deque
@@ -36,20 +34,9 @@ class RecentCounter:
 # Result:
 # Runtime: 324 ms, faster than 98.24 % of Python3 online submissions for Number of Recent Calls.
 # Memory Usage: 18.5 MB, less than 20.00 % of Python3 online submissions for Number of Recent Calls.
-
-
-
-# ----Question 2
-# kinda difficult because have to keep count of what the 
-# "maximum" priority is to decide whether to send to back or not
-# can be done in a lot of ways but did it with a stack that's 
-# basically a sorted priorities, popping the "max" if the element
-# at the "head" of queue has "max priority"
-# space complexity o(n) for stack
-# Time complexity o(nlogn) for sort
-
-# maybe explain that deque can't be mutated during iteration
-# to fellow study members
+```
+# printer
+``` python
 from collections import deque
 def solution(priorities, location):
     answer = 0
@@ -83,11 +70,21 @@ answer = solution([1, 1, 9, 1, 1, 1],0)
 print(answer)
 
 
+# ----Question 2
+# kinda difficult because have to keep count of what the 
+# "maximum" priority is to decide whether to send to back or not
+# can be done in a lot of ways but did it with a stack that's 
+# basically a sorted priorities, popping the "max" if the element
+# at the "head" of queue has "max priority"
+# space complexity o(n) for stack
+# Time complexity o(nlogn) for sort
 
+# maybe explain that deque can't be mutated during iteration
+# to fellow study members
 
-
-# ----------------Stack
-
+```
+# minstack
+```python
 # ----Question 1
 # 1st attempt
 # couldn't think of way to get min in constant time
@@ -193,8 +190,10 @@ print(answer.getMin())
 #         return self.q[len(self.q) - 1][1]
 
 
-# ----Question 2
+```
 
+# valid-parentheis
+```python
 # 1. attempt
 # class Solution:
 #     def isValid(self, s: str) -> bool:
@@ -298,8 +297,9 @@ print(answer)
 
 
 
-
-# ---------------- DP
+```
+# max-subarray
+```python
 
 # ----Question 1
 
@@ -320,8 +320,6 @@ print(answer)
 # Memory Usage: 14.8 MB, less than 5.69 % of Python3 online submissions for Maximum Subarray.
 # time is fast, but how should i decrease memory?
 # improvement: can i increase time by keeping a max pointer?
-
-
 
 # 2nd attempt, with max pointer
 class Solution:
@@ -362,7 +360,10 @@ class Solution:
 #         return maxSum
 
 
-# ----Question 2
+```
+# climbing-stairs
+```python
+
 # dp 몰랐을 때, 예전 0th try
 
 # 70. Climbing Stairs
