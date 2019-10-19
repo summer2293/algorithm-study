@@ -122,9 +122,22 @@ prography 5th algorithm study 룰 정리
     return S.is_empty()
     ```
 
+
+
 ## 2019/10/29
 
 - 트리
-  - 발표: 조예지
 
-- 
+  - 발표: 조예지
+    - <https://leetcode.com/problems/maximum-depth-of-binary-tree/>
+    - <https://leetcode.com/problems/merge-two-binary-trees/>
+
+- 힙
+  - 발표: 한수민
+
+  - 문제
+
+    - <https://leetcode.com/problems/single-number/>
+    - <https://leetcode.com/problems/two-sum/>
+
+

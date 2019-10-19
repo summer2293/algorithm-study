@@ -1,6 +1,10 @@
 # dynamic programming
 
->  정의: dynamic programming usually refers to simplifying a decision by breaking it down into a sequence of decision steps over time.
+> _by Lee Dong Joo, <https://github.com/codinggosu>_ 
+
+### 정의
+
+dynamic programming usually refers to simplifying a decision by breaking it down into a sequence of decision steps over time.
 
 
 
