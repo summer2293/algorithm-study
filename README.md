@@ -81,14 +81,63 @@ prography 5th algorithm study 룰 정리
     - https://leetcode.com/problems/climbing-stairs/
 - 스택 / 큐
   - 발표 : 장지창
+
     - https://planjang.tistory.com/211
   - 문제
-    <스택>
+
+    ​	<스택>
+
     - https://leetcode.com/problems/valid-parentheses/
+
     - https://leetcode.com/problems/min-stack/
-    <큐>
+
+      <큐>
+
     - https://leetcode.com/problems/number-of-recent-calls/
+
     - https://programmers.co.kr/learn/courses/30/lessons/42587
 - 회고: 한수민
+
+  - 스터디 브랜치는 자신의 영어 이름으로 판다.
+
+  - __src/name__  안에 _week.md_  로 파기
+
+  - 문제 제목은 h1 로 , 안의 내용은 "```python" 으로 명시하기 
+
+  - 시간복잡도 넣기 
+
+  - ```python
+    def is_parentheses_match(expr):
+    	lefty = "({["
+    	righty = ")}]"
+    	S = ArrayStack()
+    for x in expr:
+       if c in lefty:
+       	  S.push(c)
+       elif c in righty:
+       if S.is_empty():
+           return False
+       if righty.index(c) != lefty.index(S.pop()):
+           return False
+    return S.is_empty()
+    ```
+
+
+
+## 2019/10/29
+
+- 트리
+
+  - 발표: 조예지
+    - <https://leetcode.com/problems/maximum-depth-of-binary-tree/>
+    - <https://leetcode.com/problems/merge-two-binary-trees/>
+
+- 힙
+  - 발표: 한수민
+
+  - 문제
+
+    - <https://leetcode.com/problems/single-number/>
+    - <https://leetcode.com/problems/two-sum/>
 
 
