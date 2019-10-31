@@ -196,5 +196,8 @@ AVL 트리는 모든 internal node v에 대해, v의 자식들의 높이가 최�
     - <https://leetcode.com/problems/k-closest-points-to-origin/>
     - <https://leetcode.com/problems/valid-anagram/>
 
-- 
+- 힙
   - 발표: 김은향
+  - 문제 
+  - <https://leetcode.com/problems/last-stone-weight/>
+  - <https://leetcode.com/problems/top-k-frequent-elements/>
