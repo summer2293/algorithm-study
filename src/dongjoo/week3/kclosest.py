@@ -38,3 +38,6 @@ print(answer.kClosest([[3, 3], [5, -1], [-2, 4]], 2))
 # 2nd attempt:
 # Runtime: 784 ms, faster than 48.41% of Python3 online submissions for K Closest Points to Origin.
 # Memory Usage: 19.3 MB, less than 5.80% of Python3 online submissions for K Closest Points to Origin.
+
+
+#idea for improvement, use heap replace instead of heapifying the whole list and popping?
