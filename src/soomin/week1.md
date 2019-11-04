@@ -1,6 +1,4 @@
-## stack
-
-##### valid-parentheses
+# valid-parentheses
 
 ```python
 class Solution:
@@ -23,7 +21,7 @@ class Solution:
             return True
 ```
 
-##### min-stack
+# min-stack
 
 ```python
 class MinStack:
@@ -44,11 +42,7 @@ class MinStack:
         return min(self.q)
 ```
 
-
-
-## queue
-
-##### printer
+# printer
 
 ```python
 def solution(priorities, location):
@@ -72,7 +66,7 @@ def solution(priorities, location):
     return answer
 ```
 
-##### Number of Recent Calls
+# Number of Recent Calls
 
 ```python
 # 문제 이해를 잘 못했나봄 ㅠㅠ 솔루션 코드로 이해 
@@ -105,11 +99,7 @@ class RecentCounter(object):
 
 ```
 
-
-
-## dp
-
-##### climbing-stairs
+# climbing-stairs
 
 ```python
 class Solution:
@@ -127,7 +117,7 @@ class Solution:
         return second
 ```
 
-##### number-of-recent-calls
+# number-of-recent-calls
 
 ```python
 # 내가한거 time exceed ㅠ____ㅠ
@@ -149,4 +139,3 @@ class Solution:
  
         return max_num
 ```
-
