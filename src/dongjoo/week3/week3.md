@@ -26,30 +26,19 @@ print(answer.kClosest([[3, 3], [5, -1], [-2, 4]], 2))
 ##### valid-anagram
 
 ```python
+
+from collections import Counter
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        a = dict()
-        for c in s:
-            if c in a:
-                a[c] += 1
-            else:
-                a[c] = 1
-        for elem in t:
-            if elem in a:
-                a[elem] -= 1
-                if a[elem] < 0:
-                    return False
-            else:
-                return False
-        for value in a.values():
-            if value > 0:
-                return False
-        return True
+        if len(s) != len(t):
+            return False
+        return Counter(s) == Counter(t)
 
+# Runtime: 48 ms, faster than 85.87 % of Python3 online submissions for Valid Anagram.
+# Memory Usage: 14.2 MB, less than 6.25 % of Python3 online submissions for Valid Anagram.
+# Next challenges:
 
-# Runtime: 52 ms, faster than 78.19 % of Python3 online submissions for Valid Anagram.
-# Memory Usage: 14.1 MB, less than 9.38 % of Python3 online submissions for Valid Anagram.
-# hmm.. absolutely no difference in memory
 
 ```
 
@@ -59,30 +48,30 @@ class Solution:
 ##### last-stone-weight
 
 ```python
-import bisect
+# 3rd attempt with heap
+import heapq
 
 class Solution:
     def lastStoneWeight(self, stones) -> int:
-        if len(stones) < 2:
-            return stones[0]
-        stones.sort()
-        # print(stones)
+        stones = [-1 * stone for stone in stones]
+        heapq.heapify(stones)
         while len(stones) > 1:
-            # print(stones)
-            if stones[-1] == stones[-2]:
-                stones.pop()
-                stones.pop()
+            y = -1 * heapq.heappop(stones)
+            x = -1 * heapq.heappop(stones)
+            if y == x:
+                continue
             else:
-                new_weight = stones[-1] - stones[-2]
-                stones.pop()
-                stones.pop()
-                bisect.insort_right(stones,new_weight)
+                new_weight = y-x
+                heapq.heappush(stones, -1 * new_weight)
         if stones:
-            return stones[0]
-        else:
-            return 0
+            return stones[0] * -1
+        return 0
+            
 
-        
+# performance:
+# Runtime: 36 ms, faster than 83.49% of Python3 online submissions for Last Stone Weight.
+# Memory Usage: 13.6 MB, less than 100.00% of Python3 online submissions for Last Stone Weight.
+
 # First Attempt
 # Runtime: 44 ms, faster than 14.45 % of Python3 online submissions for Last Stone Weight.
 # Memory Usage: 13.9 MB, less than 100.00 % of Python3 online submissions for Last Stone Weight.
@@ -96,29 +85,32 @@ class Solution:
 
 ```python
 import heapq
+from collections import Counter
 
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        freq = dict()
-        for i in nums:
-            if i in freq:
-                freq[i] += 1
-            else:
-                freq[i] = 1
-        k_freq = []
-        for key,freq in freq.items():
-            heapq.heappush(k_freq, (-freq, key))
+    def topKFrequent(self, nums, k: int):
+        counter = Counter(nums)
+        frequent = [0] * len(counter)
+        idx = 0
+        for key, freq in counter.items():
+            frequent[idx] = (-1 * freq, key)
+            idx += 1
+        heapq.heapify(frequent)
         answer = []
-        for i in range(k):
-            answer.append(heapq.heappop(k_freq)[1])
+        for _ in range(k):
+            answer.append(heapq.heappop(frequent)[1])
         return answer
 
+answer = Solution()
 
-# 1st attempt:
-# Runtime: 124 ms, faster than 46.29 % of Python3 online submissions for Top K Frequent Elements.
-# Memory Usage: 18.4 MB, less than 6.25 % of Python3 online submissions for Top K Frequent Elements.
+print(answer.topKFrequent([3, 0, 1, 0],1))
 
+# result:.. kinda weird: ran same code twice, got vastly different results
+# 1st time: 136 ms which was like 15 %
 
+# second time:
+# Runtime: 116 ms, faster than 87.12 % of Python3 online submissions for Top K Frequent Elements.
+# Memory Usage: 18.3 MB, less than 6.25 % of Python3 online submissions for Top K Frequent Elements.
 
 
 
