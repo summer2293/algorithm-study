@@ -93,15 +93,13 @@ prography 5th algorithm study 룰 정리
 
 
 
-##### 자료를 소팅된 상태로 저장해야 한다면 무슨 자료 구조를 써야 할까요?
+##### 자료를 소팅된 상태로 저장해야 한다면 무슨 자료 구조를 써야 할까요? (p.s 면접 담당자가 좋아함)
 
 트리를 사용할 것 같다. in order traversal 방식을 사용하면 자동으로 소팅이 되어있다. 
 
 or
 
 AVL 트리는 모든 internal node v에 대해, v의 자식들의 높이가 최대 1만큼만 차이가 나는 이진 탐색 트리이다. insert나 remove할 때 높이차가 2이상이면, 데이터를 재구조화하기 때문에 유용할 것 같다! 
-
-(p.s 면접 담당자가 좋아함)
 
 
 
@@ -180,7 +178,7 @@ AVL 트리는 모든 internal node v에 대해, v의 자식들의 높이가 최�
     - <https://leetcode.com/problems/single-number/>
     - <https://leetcode.com/problems/two-sum/>
 
-##### 지각
+##### 벌금
 
 - 지각 : 이동주 (1,000원)
 - 결석 : 김은향 (1번 면제)
@@ -189,6 +187,8 @@ AVL 트리는 모든 internal node v에 대해, v의 자식들의 높이가 최�
 
 
 ## 2019/11/05
+
+3주차 - 슈퍼스타트 7시 
 
 - 정렬
   - 발표: 김건호
