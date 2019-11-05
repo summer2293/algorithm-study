@@ -66,7 +66,7 @@ class Solution:
         num = Counter(nums)
         num.elements()
         # keys
-        keys = list(num.keys())
+        keys = sorted(list(num.keys()))
         return keys[:k]
 
 # 두번째 시도
