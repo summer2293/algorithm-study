@@ -103,6 +103,49 @@ AVL 트리는 모든 internal node v에 대해, v의 자식들의 높이가 최�
 
 
 
+11/05
+
+##### for _ in range(k)
+
+인덱스 안쓸때 이런식으로 쓸 수 있다.
+
+##### sort 와 sorted의 차이
+
+- __sort()__
+  원본을 직접 정렬 , None을 반환함
+
+```python
+list.sort()
+```
+
+- __sorted(list)__
+  원본에 영향을 끼치지 않음, 정렬한 새로운 문자열 혹은 list를 반환함
+
+##### collections.Counter()
+
+컨테이너에 동일한 값의 자료가 몇개인지를 파악하는데 사용하는 객체이다.
+
+- most_common(n)
+  입력된 값의 요소들 중 빈도수(frequency)가 높은 순으로 상위 n개를 리스트(list) 안의 투플(tuple) 형태로 반환한다. n을 입력하지 않은 경우, 요소 전체를 [(‘값’, 개수)]의 형태로 반환한다.
+
+```python
+import collections
+
+c2 = collections.Counter(‘apple, orange, grape’)
+print(c2.most_common())
+print(c2.most_common(3))
+```
+
+##### try-execept 차이
+
+<https://excelsior-cjh.tistory.com/94> [EXCELSIOR]
+
+- 효율적 측면
+  - 99% try문을 통과할시 try, excepy를 쓰는게 낫고 50%이상이 try문을 통과하지 못할시 if else를 쓰는게 효율적
+- 그 외 참고할 자료:  `None` 보다 예외를 발생시키자 (Effective Python: Better way 14)
+  - `None`을 반환하는 함수는 후에 호출할 때 해당 값이 `None`인지 평가해줘야함 ( `if return_none_or_value() == None else…`)
+  - 코드를 읽는 사람이 왜 `None`을 반환하는지 명확하게 유추할 수 없음 -> `raise CustomException`을 발생시켜서 명확히 어떤 상황인지 명시하는게 
+
 
 
 ## 2019/10/15
@@ -142,21 +185,6 @@ AVL 트리는 모든 internal node v에 대해, v의 자식들의 높이가 최�
 
   - 시간복잡도 넣기 
 
-  - ```python
-    def is_parentheses_match(expr):
-    	lefty = "({["
-    	righty = ")}]"
-    	S = ArrayStack()
-    for x in expr:
-       if c in lefty:
-       	  S.push(c)
-       elif c in righty:
-       if S.is_empty():
-           return False
-       if righty.index(c) != lefty.index(S.pop()):
-           return False
-    return S.is_empty()
-    ```
 
 
 
@@ -202,44 +230,30 @@ AVL 트리는 모든 internal node v에 대해, v의 자식들의 높이가 최�
     - <https://leetcode.com/problems/last-stone-weight/>
     - <https://leetcode.com/problems/top-k-frequent-elements/>
 
+##### 벌금
 
+- 결석 : 장지창 (1번 면제) 🎂축생일🎂
+
+
+
+## 2019/11/12
+
+4주차 - 슈퍼스타트 7시
+
+- 
+  - 발표: 장지창
+  - 문제
+    -  
+    - 
+-  그리디
+  - 발표:손주영
+  - 문제
+    - 
+
+##### 비고
+
+- 결석으로 발표를 하지 못하는 코딩고수씨를 대신해, 깜짝손님 주영언니가 그리디를 발표하게 되었습니다!
 
 ##### 벌금
 
-- 결석 : 장지창 (1번 면제)
-
-## 11/05 회고
-### for _ in range(k)
-
-인덱스 안쓸때 이런식으로 쓸 수도 있음-
-
-### sort 와 sorted의 차이
-- __sort()__
-원본을 직접 정렬 , None을 반환함
-```python
-list.sort()
-```
-
-- __sorted(list)__
-원본에 영향을 끼치지 않음, 정렬한 새로운 문자열 혹은 list를 반환함
-
-### collections.Counter()
-컨테이너에 동일한 값의 자료가 몇개인지를 파악하는데 사용하는 객체이다.
-- most_common(n)
-입력된 값의 요소들 중 빈도수(frequency)가 높은 순으로 상위 n개를 리스트(list) 안의 투플(tuple) 형태로 반환한다. n을 입력하지 않은 경우, 요소 전체를 [(‘값’, 개수)]의 형태로 반환한다.
-```python
-import collections
-
-c2 = collections.Counter(‘apple, orange, grape’)
-print(c2.most_common())
-print(c2.most_common(3))
-```
-
-### try-execept 차이
-<https://excelsior-cjh.tistory.com/94> [EXCELSIOR]
-- 효율적 측면
-	-  99% try문을 통과할시 try, excepy를 쓰는게 낫고 50%이상이 try문을 통과하지 못할시 if else를 쓰는게 효율적
-- 그 외 참고할 자료:  `None` 보다 예외를 발생시키자 (Effective Python: Better way 14)
-	- `None`을 반환하는 함수는 후에 호출할 때 해당 값이 `None`인지 평가해줘야함 ( `if return_none_or_value() == None else…`)
-	- 코드를 읽는 사람이 왜 `None`을 반환하는지 명확하게 유추할 수 없음 -> `raise CustomException`을 발생시켜서 명확히 어떤 상황인지 명시하는게 
->>>>>>> 036999ef733cc5bc6b578151f5a41a089d0da1d9
+- 결석: 이동주 (1번 면제) 🎂축생일🎂
