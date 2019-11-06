@@ -246,10 +246,11 @@ print(c2.most_common(3))
     - <https://leetcode.com/problems/intersection-of-two-arrays-ii/>
     - <https://leetcode.com/problems/find-the-duplicate-number/>
 
--  그리디
+- 그리디
   - 발표:손주영
   - 문제
-    - 
+    - <https://leetcode.com/problems/two-city-scheduling/discuss/?currentPage=1&orderBy=most_votes&query=&tag=greedy>
+    - <https://leetcode.com/problems/delete-columns-to-make-sorted/solution/>
 
 ##### 비고
 
