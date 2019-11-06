@@ -240,11 +240,12 @@ print(c2.most_common(3))
 
 4주차 - 슈퍼스타트 7시
 
-- 
+- 이분탐색
   - 발표: 장지창
   - 문제
-    -  
-    - 
+    - <https://leetcode.com/problems/intersection-of-two-arrays-ii/>
+    - <https://leetcode.com/problems/find-the-duplicate-number/>
+
 -  그리디
   - 발표:손주영
   - 문제
