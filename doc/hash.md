@@ -8,6 +8,13 @@
 
 ![img](https://t1.daumcdn.net/cfile/tistory/236B1A4C56B4DE1F12)
 
+### 작동방식
+
+1. __key__ 는 __hash function__ 을 통해 _hash_ 값을 리턴한다
+2. 리턴받은 hash 는 bucket 의 index 로 환산되여 데이터에 접근한다. 
+
+
+
 ### 구성요소
 
 - ##### key 
@@ -32,13 +39,25 @@
 
 
 
+
+
+### 성능
+
+| FUNCTION | BEST | WORST (collision) |
+| :------: | :--: | :---------------: |
+|  insert  | O(1) |       O(N)        |
+|  delete  | O(1) |       O(N)        |
+|  search  | O(1) |       O(N)        |
+
+
+
 ### hash collision
 
 서로 다른 key 가 hash function 을 통해 같은 해시가 될 수 있는 경우를 말한다. 해시 함수 알고리즘을 잘 짜서 줄여야 한다. 
 
 ### 해결방법
 
-##### 1. chaining
+#### 1. chaining
 
 충돌 시에 해당 index value 값에 연결시키는 방법. 
 
@@ -58,7 +77,24 @@
 
 
 
-##### 2. open addressing 
+#### chaining 시간복잡도
+
+ len(Bucket) ==  ‘N’,  len(key) ==  ‘m’ 일 때, 평균적으로 저장소에서 1개의 hash당 (m/n)개의 키가 들어있다. 이를 ‘α’라고 정의한다.
+
+insert 시 __head__ 에 저장할 경우에는 O(1)의 시간 복잡도를 가지지만 , tail 에 자료를 저장할경우 O(α) 의 시간을 가진다 
+
+```
+m/n = α (1개의 Hash당 평균적으로 α개의 키가 들어있다.)
+```
+
+|    FUNCTION     | BEST | WORST (collision) |
+| :-------------: | :--: | :---------------: |
+|     insert      | O(1) |       O(N)        |
+| delete & search | O(α) |       O(N)        |
+
+
+
+#### 2. open addressing 
 
 ![img](https://media.geeksforgeeks.org/wp-content/uploads/Linear-Probing-1-1.jpg)
 
@@ -80,11 +116,16 @@
 
 
 
-#### 작동방식
+#### Open Addressing 시간복잡도
 
-1. __key__ 는 __hash function__ 을 통해 hash 값을 리턴한다
-2. 리턴받은 hash 는 bucket 의 index 로 환산되여 데이터에 접근한다. 
+len(Bucket) ==  ’n’, len(key) == ‘m’일 때, ‘α’는 1보다 작거나 같다. 
 
- 를 입력받아 hash 함수를 돌려서 반환받은 해시 코드를 배열의 index 를 환산하여 데이터에 접근하는 자료구조.
+저장소 1개 버킷 당 1개의 값(value)만 가지기 때문이다.
 
-value := get(key)에 대한 기능이 매우매우 빠르게 작동한다. 개발자라면 자주 쓰는 데이타 구조지만, 실제로 어떻게 작동하는지에 대해서 정확하게 알고 있지는 모르는 경우가 많다. 이 글에서는 해쉬 테이블에 대한 기본적인 구조와, 구현 방식에 대해서 설명 하도록 한다.
+```
+m/n = α (α <= 1)
+```
+
+|           FUNCTION            | BEST | WORST (collision) |
+| :---------------------------: | :--: | :---------------: |
+| Insertion & Deletion & Search | O(1) |       O(N)        |
