@@ -249,8 +249,8 @@ print(c2.most_common(3))
 - 그리디
   - 발표:손주영
   - 문제
-    - <https://leetcode.com/problems/two-city-scheduling/discuss/?currentPage=1&orderBy=most_votes&query=&tag=greedy>
-    - <https://leetcode.com/problems/delete-columns-to-make-sorted/solution/>
+    - <https://leetcode.com/problems/two-city-scheduling/>
+    - <https://leetcode.com/problems/delete-columns-to-make-sorted/>
 
 ##### 비고
 
@@ -259,3 +259,4 @@ print(c2.most_common(3))
 ##### 벌금
 
 - 결석: 이동주 (1번 면제) 🎂축생일🎂
+
