@@ -249,8 +249,8 @@ print(c2.most_common(3))
 - 그리디
   - 발표:손주영
   - 문제
-    - <https://leetcode.com/problems/two-city-scheduling/>
-    - <https://leetcode.com/problems/delete-columns-to-make-sorted/>
+    - <https://leetcode.com/problems/score-after-flipping-matrix/>
+    - <https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/>
 
 ##### 비고
 
