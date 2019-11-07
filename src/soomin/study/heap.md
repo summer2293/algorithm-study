@@ -64,21 +64,21 @@
 
 
 
-   ![img](./img/heap/heap.002.jpeg)
+   ![img](../img/heap/heap.001.jpeg)
 
-   ![img](./img/heap/heap.003.jpeg)
+   ![img](../img/heap/heap.003.jpeg)
 
-   ![img](./img/heap/heap.004.jpeg)
+   ![img](../img/heap/heap.004.jpeg)
 
-   ![img](./img/heap/heap.005.jpeg)
+   ![img](../img/heap/heap.005.jpeg)
 
-   ![img](./img/heap/heap.006.jpeg)
+   ![img](../img/heap/heap.006.jpeg)
 
-   ![img](./img/heap/heap.007.jpeg)
+   ![img](../img/heap/heap.007.jpeg)
 
-   ![img](./img/heap/heap.008.jpeg)
+   ![img](../img/heap/heap.008.jpeg)
 
-   ![img](./img/heap/heap.010.jpeg)
+   ![img](../img/heap/heap.010.jpeg)
 
 
 ##### 데이터 삭제 과정 (min heap)
@@ -87,25 +87,25 @@
 
 
 
-![img](./img/heap/heap.012.jpeg)
+![img](../img/heap/heap.012.jpeg)
 
-![img](./img/heap/heap.013.jpeg)
+![img](../img/heap/heap.013.jpeg)
 
-![img](./img/heap/heap.014.jpeg)
+![img](../img/heap/heap.014.jpeg)
 
-![img](./img/heap/heap.015.jpeg)
+![img](../img/heap/heap.015.jpeg)
 
-![img](./img/heap/heap.016.jpeg)
+![img](../img/heap/heap.016.jpeg)
 
-![img](./img/heap/heap.017.jpeg)
+![img](../img/heap/heap.017.jpeg)
 
-![img](./img/heap/heap.018.jpeg)
+![img](../img/heap/heap.018.jpeg)
 
-![img](./img/heap/heap.019.jpeg)
+![img](../img/heap/heap.019.jpeg)
 
-![img](./img/heap/heap.020.jpeg)
+![img](../img/heap/heap.020.jpeg)
 
-![img](./img/heap/heap.021.jpeg)
+![img](../img/heap/heap.021.jpeg)
 
 ### python 에서의 heap 구현
 
@@ -200,4 +200,6 @@ print(minheap([4, 1, 7, 3, 8, 5], 3))
    - 데이터 삭제: **O(log^2n)**
 
 
+
+## 
 
