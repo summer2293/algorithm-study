@@ -32,7 +32,7 @@ class Solution:
             if nums1[i] < nums2[j]: i += 1
             elif nums1[i] > nums2[j]: j += 1
             else: 
-                res.append(nums1[i])
+                r.append(nums1[i])
                 j += 1
                 i += 1
         
