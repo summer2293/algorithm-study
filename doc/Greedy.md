@@ -106,9 +106,10 @@ print(final_stations)
 
 #### NP문제 예시: 가장 훌륭한 풋볼 팀 선수 고르기. 
    <img width="300" alt="football" src="https://user-images.githubusercontent.com/39859458/68654366-1cbfda00-0571-11ea-8677-e1e29d3a2bb4.png">
+   
+- https://namu.wiki/w/P-NP%20%EB%AC%B8%EC%A0%9C
 
 - https://ko.wikipedia.org/wiki/NP-%EC%99%84%EC%A0%84
-
 
 #### 동적 프로그래밍 
 - 1950년대 Richard Bellman에 의해 나온 용어로, 그 당시에는 "설계"와 "동적 프로그래밍"이 다중 단계 처리를 최적으로 계획한다는 것을 의미했다. 
