@@ -17,7 +17,7 @@
 - 당신은 학교에서 되도록 많은 수업을 듣고 싶어한다. 당신이 신청할 수 있는 과목의 목록은 다음과 같다. 
    <img width="400" alt="P1" src="https://user-images.githubusercontent.com/39859458/68654715-e2a30800-0571-11ea-8078-768b4ad8c07f.png">
 
-    1) 가장 빨리 끝나는 과목을 고. 
+    1) 가장 빨리 끝나는 과목을 고른다. 
     2) 첫번째 과목이 끝난 후에 시작하는 과목을 고른다. 
 
 - 각 단계에서 국소 최적해(locally optimal solution)을 찾음으로써 최종적으로는 전역 최적해(globally optimal solution)을 구현한다. 
