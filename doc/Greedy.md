@@ -1,7 +1,5 @@
 # Greedy
 
-<img width="300" alt="greedy_word" src="https://user-images.githubusercontent.com/39859458/68653602-6dcece80-056f-11ea-9191-33af37afa8b5.png”>
-
 ## 개념
 **매 선택에서 지금 이 순간 당장 최적인 답을 선택하여 적합한 결과를 도출하자.**
 그리디 알고리즘은 탐욕 알고리즘 또는 욕심쟁이 알고리즘이라고 한다. 미래를 생각하지 않고 각 단계에서 가장 최선의 선택을 하는 기법이다. 이렇게 각 단계에서 최선의 선택을 한 것이 전체적으로도 최선이길 바라는 알고리즘이다.
@@ -17,9 +15,7 @@
 ## 예시
 1. 수업 시간표 짜기 문제. 
 - 당신은 학교에서 되도록 많은 수업을 듣고 싶어한다. 당신이 신청할 수 있는 과목의 목록은 다음과 같다. 
-    <img width="300" alt="greedy_word" src="https://user-images.githubusercontent.com/39859458/68653790-d3bb5600-056f-11ea-8a12-188673a80276.jpg”>
-
-
+   <img width="400" alt="P1" src="https://user-images.githubusercontent.com/39859458/68654715-e2a30800-0571-11ea-8078-768b4ad8c07f.png">
 
     1) 가장 빨리 끝나는 과목을 고란다. 
     2) 첫번째 과목이 끝난 후에 시작하는 과목을 고른다. 
@@ -48,14 +44,14 @@
 
     1) 가능한 모든 방송국의 부분 집합을 나열합니다. 
     - 멱집합 
-    (https://ict-nroo.tistory.com/51)
-    (https://ko.wikipedia.org/wiki/%EB%A9%B1%EC%A7%91%ED%95%A9)
-    (https://ko.wikipedia.org/wiki/%EC%B9%B8%ED%86%A0%EC%96%B4%EC%9D%98_%EC%A0%95%EB%A6%AC)
+    - https://ict-nroo.tistory.com/51
+    - https://ko.wikipedia.org/wiki/%EB%A9%B1%EC%A7%91%ED%95%A9
+    - https://ko.wikipedia.org/wiki/%EC%B9%B8%ED%86%A0%EC%96%B4%EC%9D%98_%EC%A0%95%EB%A6%AC
     2) 가능한 부분 집합의 수는 2^n이다. 
     3) 이 부분 집합 중에서 50개 주 전체를 커버할 수 있으면서 가장 원소의 수가 적은 부분 집합을 고른다.  
 
 - 실제 코드는 문제 단순화를 위해 8개의 주만
-    <img width="300" alt="P1_1" src="https://user-images.githubusercontent.com/39859458/68653748-bc7c6880-056f-11ea-9843-00d4ff18b2a3.jpg">
+    <img width="500" alt="P1_1" src="https://user-images.githubusercontent.com/39859458/68653748-bc7c6880-056f-11ea-9843-00d4ff18b2a3.jpg">
 
 
 ```python
