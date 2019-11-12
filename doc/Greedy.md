@@ -1,7 +1,9 @@
 # Greedy
 
+<img width="300" alt="greedy_word" src="https://user-images.githubusercontent.com/39859458/68653602-6dcece80-056f-11ea-9191-33af37afa8b5.png”>
+
 ## 개념
-"매 선택에서 지금 이 순간 당장 최적인 답을 선택하여 적합한 결과를 도출하자."
+**매 선택에서 지금 이 순간 당장 최적인 답을 선택하여 적합한 결과를 도출하자.**
 그리디 알고리즘은 탐욕 알고리즘 또는 욕심쟁이 알고리즘이라고 한다. 미래를 생각하지 않고 각 단계에서 가장 최선의 선택을 하는 기법이다. 이렇게 각 단계에서 최선의 선택을 한 것이 전체적으로도 최선이길 바라는 알고리즘이다.
 
 1. (입력) 데이터 간의 관계를 고려하지 않고 수행 과정에서 '욕심내어' 최소값 또는 최대값을 가진 데이터를 선택한다.
@@ -15,7 +17,7 @@
 ## 예시
 1. 수업 시간표 짜기 문제. 
 - 당신은 학교에서 되도록 많은 수업을 듣고 싶어한다. 당신이 신청할 수 있는 과목의 목록은 다음과 같다. 
-    <img >
+    <img width="300" alt="greedy_word" src="https://user-images.githubusercontent.com/39859458/68653790-d3bb5600-056f-11ea-8a12-188673a80276.jpg”>
 
 
 
@@ -29,7 +31,7 @@
 2. 배낭 채우기 문제. 
 - 도둑이 훔친 물건을 가져갈 배낭을 갖고 있다. 이 배낭에는 총 35kg의 물건만 넣을 수 있다. 
 - 훔친 물건 list는 아래와 같다. 
-    <img >
+    <img width="300" alt="P1_1" src="https://user-images.githubusercontent.com/39859458/68653852-f77e9c00-056f-11ea-84f6-8ab9c0d7a961.png">
 
 
     1) greedy알고리즘으로 이 문제를 풀면 : 스테레오(30kg), 총가치 3000달러. 
@@ -53,7 +55,7 @@
     3) 이 부분 집합 중에서 50개 주 전체를 커버할 수 있으면서 가장 원소의 수가 적은 부분 집합을 고른다.  
 
 - 실제 코드는 문제 단순화를 위해 8개의 주만
-    <img >
+    <img width="300" alt="P1_1" src="https://user-images.githubusercontent.com/39859458/68653748-bc7c6880-056f-11ea-9843-00d4ff18b2a3.jpg">
 
 
 ```python
@@ -99,12 +101,19 @@ print(final_stations)
 2. graph
 3. NP완전문제(Nondeterministic Polynomial-. Complete), 집합 커버링 문제(set-covering problem)
     - NP 집합에 속하는 결정 문제 중에서 가장 어려운 문제의 부분집합으로, 모든 NP 문제를 다항 시간 내에 NP-완전 문제로 환산할 수 있다. NP-완전 문제 중 하나라도 P에 속한다는 것을 증명한다면 모든 NP 문제가 P에 속하기 때문에, P-NP 문제가 P=NP의 형태로 풀리게 된다. 반대로 NP-완전 문제 중의 하나가 P에 속하지 않는다는 것이 증명된다면 P=NP에 대한 반례가 되어 P-NP 문제는 P≠NP의 형태로 풀리게 된다.
-    ### 예시: 가장 훌륭한 풋볼 팀 선수 고르기. 
-    <img >
+
+#### 그래프
+<img width="500" alt="G1" src="https://user-images.githubusercontent.com/39859458/68653936-2dbc1b80-0570-11ea-86d1-d7f0add5e70d.png">
+
+<img width="500" alt="G2" src="https://user-images.githubusercontent.com/39859458/68653966-3f052800-0570-11ea-9ba7-8214270c12db.png">
+
+
+
+#### NP문제 예시: 가장 훌륭한 풋볼 팀 선수 고르기. 
+   <img width="300" alt="football" src="https://user-images.githubusercontent.com/39859458/68654366-1cbfda00-0571-11ea-8677-e1e29d3a2bb4.png">
 
 - https://ko.wikipedia.org/wiki/NP-%EC%99%84%EC%A0%84
 
-- https://ko.wikipedia.org/wiki/NP-%EC%99%84%EC%A0%84
 
 
 # 관련 문제
@@ -115,5 +124,5 @@ print(final_stations)
 
 # 출처
 
-[알고리즘, 사이텍미디어 출판 - 오경수/강희중/안효범/임재걸 공역]
-[Hello Coding 그림으로 개념을 이해하는 알고리즘]
+- [알고리즘, 사이텍미디어 출판 - 오경수/강희중/안효범/임재걸 공역]
+- [Hello Coding 그림으로 개념을 이해하는 알고리즘]
