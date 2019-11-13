@@ -259,4 +259,26 @@ print(c2.most_common(3))
 ##### 벌금
 
 - 결석: 이동주 (1번 면제) 🎂축생일🎂
+- 결석: 조예지 (1번 면제) 
+
+
+
+
+
+## 2019/11/19
+
+5주차 - 슈퍼스타트 7시 (예약자: 장고장)
+
+- 그래프
+  - 발표: 조예지
+  - 문제
+    - <https://leetcode.com/problems/find-the-town-judge/>
+    - <https://leetcode.com/problems/regions-cut-by-slashes/>
+- 완전탐색
+  - 발표: 한수민 (발표할게 별로 없을것 같아, 문제 4개 + )
+  - 문제: 프로그래머스 4문제
+    - <https://programmers.co.kr/learn/courses/30/lessons/42840>
+    - <https://programmers.co.kr/learn/courses/30/lessons/42839>
+    - <https://programmers.co.kr/learn/courses/30/lessons/42841>
+    - <https://programmers.co.kr/learn/courses/30/lessons/42842>
 
