@@ -160,3 +160,35 @@ if __name__ == "__main__":
     solution(N, trust)
 
 ```
+
+
+## 완전탐색 - 프로그래머스 - 카펫
+
+```python
+import pytest_watch
+
+brown, red = 18, 12
+output = [6, 5]
+
+
+def test_simple():
+    assert solution(brown, red) == output
+
+
+def solution(brown, red):
+    total_carpet = brown+red
+    for i in range(3, int(total_carpet ** 0.5)+1):
+        if total_carpet % i == 0:
+            height = i
+            width = total_carpet // i
+            for j in range(2, min(height, width), 2):
+                if height-j < 1 or width-j < 1:
+                    break
+                if (height-j) * (width-j) == red:
+                    return [max(height, width), min(height, width)]
+    return -1
+
+if __name__ == "__main__":
+    solution(brown, red)
+
+```
