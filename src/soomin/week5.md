@@ -57,28 +57,28 @@ def solution(brown, red):
 ## 소수찾기
 
 ```python
-# 소수찾기  - 미구현 안돌아감 ㅠㅠ 
 import itertools
 def solution(numbers):
-    for i in range(2,len(numbers)+1):
-        a = list(map(''.join, itertools.permutations(numbers,i)))
-        a = list(map(lambda x: int(x), a))
-        a = list(set(a))
-        print(a)
-        
-        for i in a:
-            is_prime(i)
-            # print(is_prime(int(i)))
-              
-def is_prime(num):
-    if num > 1:
-        for i in range(2,num):
-            if (num % i) == 0:
-                break
-            else:
-                return True
-    else:
+    permutation = []
+    counter_set = set()
+    # str 조합 join 후 int 변환해서 set box에 넣기
+    for i in range(1,len(numbers)+1):
+        permutation = map(lambda x: int(''.join(x)) ,itertools.permutations(numbers,i))
+        for i in permutation:
+            if is_prime(i): counter_set.add(i)
+    return len(counter_set)
+
+def is_prime(n):
+    if n < 2:
         return False
+    if n == 2: 
+        return True    
+    if not n & 1: 
+        return False
+    for x in range(3, int(n**0.5) + 1, 2):
+        if n % x == 0:
+            return False
+    return True
 ```
 
 ## 야구
@@ -90,7 +90,7 @@ def solution(baseball):
     for i in range(123,987+1):
         numbers.append(i)
     print(len(numbers))
-
+    
     for i in numbers:
         h = i//100
         m = (i//10) % 10
