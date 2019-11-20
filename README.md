@@ -282,3 +282,21 @@ print(c2.most_common(3))
     - <https://programmers.co.kr/learn/courses/30/lessons/42841>
     - <https://programmers.co.kr/learn/courses/30/lessons/42842>
 
+
+
+
+## 2019/11/26
+
+5주차 - 슈퍼스타트 7시 (예약자: 장고장)
+
+- 깊이우선탐색
+  - 발표: 김건호
+  - 문제
+    - <https://leetcode.com/problems/symmetric-tree/>
+    - <https://leetcode.com/problems/course-schedule/>
+- 너비우선탐색
+  - 발표: 김은향
+  - 문제
+    - <https://leetcode.com/problems/symmetric-tree/>
+    - <https://leetcode.com/problems/binary-tree-level-order-traversal/>
+
