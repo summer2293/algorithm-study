@@ -297,6 +297,6 @@ print(c2.most_common(3))
 - 너비우선탐색
   - 발표: 김은향
   - 문제
-    - <https://leetcode.com/problems/symmetric-tree/>
+    - <https://leetcode.com/problems/maximum-depth-of-n-ary-tree/>
     - <https://leetcode.com/problems/binary-tree-level-order-traversal/>
 
