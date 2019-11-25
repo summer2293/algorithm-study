@@ -21,7 +21,9 @@
 > 버스정류장에 줄서는 것 (먼저 기다리고 먼저 탐)
 
 ## 그래프로 구현해보자
+
 <img src="./images/bfs3.jpeg"/>
+
 ```python
 graph = {}
 graph['you'] = ['elice', 'bob', 'claire']  # 내 1촌
@@ -33,8 +35,9 @@ graph['thom'] = []
 graph['jonny'] = []
 graph['anuj'] = []
 ```
-	- 해시테이블은 순서를 가지지 않아서 저 리스트안에 사람들 어떤 순서인지 상관없음
-	- **방향 그래프** 임
+
+- 해시테이블은 순서를 가지지 않아서 저 리스트안에 사람들 어떤 순서인지 상관없음
+- **방향 그래프** 임
 
 <img src="./images/bfs2.jpeg"/>
 
@@ -70,9 +73,10 @@ while search_queue:
     else:
         search_queue += graph[person]
 ```
-	- `while` 문 종료 조건
-		- 망고판매상 발견하거나
-		- queue가 비거나
+- `while` 문 종료 조건
+	- 망고판매상 발견하거나
+	- queue가 비거나
+	
 <img src="./images/bfs1.jpeg"/>
 
 ## 버그발견: 이 코드의 치명적인 문제가 무엇일까요?
