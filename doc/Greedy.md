@@ -1,18 +1,29 @@
 # Greedy
 
-## 개념
+> _by Son Joo Young, <https://github.com/YunaSon>_ 
+
+
+
+### 정의
+
 **매 선택에서 지금 이 순간 당장 최적인 답을 선택하여 적합한 결과를 도출하자.**
-그리디 알고리즘은 탐욕 알고리즘 또는 욕심쟁이 알고리즘이라고 한다. 미래를 생각하지 않고 각 단계에서 가장 최선의 선택을 하는 기법이다. 이렇게 각 단계에서 최선의 선택을 한 것이 전체적으로도 최선이길 바라는 알고리즘이다.
 
-1. (입력) 데이터 간의 관계를 고려하지 않고 수행 과정에서 '욕심내어' 최소값 또는 최대값을 가진 데이터를 선택한다.
-2. 이러한 선택을 '근시안적'인 선택이라고도 한다.
-3. 그리디 알고리즘은 근시안적인 선택으로 부분적인 최적해(locally optimal solution)를 찾고, 이들을 모아서 문제의 최적해(globally optimal solution)를 얻는다. 
-3-1. 부분적은 집합(멱집합, power set)이라는 수학적 개념을 이용하여 문제를 풀고, 현실세계의 비선형 문제중 하나 인 최단 경로 구하기(Graph)의 근사해로 많이 이용된다. 
-3-2. 여러가지 상황들을 고려 (비선형적인 trade-off, graph)
+그리디 알고리즘은 탐욕 알고리즘 또는 욕심쟁이 알고리즘이라고 한다. 미래를 생각하지 않고 각 단계에서 가장 최선의 선택을 하는 기법이다. 이렇게 각 단계에서 최선의 선택을 한 것이 전체적으로도 최선이길 바라는 알고리즘이다. 데이터 간의 관계를 고려하지 않고 수행 과정에서 '욕심내어' 최소값 또는 최대값을 가진 데이터를 선택한다.
 
-*Keyward: 최적화문제풀이용 알고리즘, 근시안적, 근사치 ,욕심 
+1. 이러한 선택을 '근시안적'인 선택이라고도 한다.
+2. 그리디 알고리즘은 근시안적인 선택으로 부분적인 최적해(locally optimal solution)를 찾고, 이들을 모아서 문제의 최적해(globally optimal solution)를 얻는다. 
+3.  
+  - 부분적은 집합(멱집합, power set)이라는 수학적 개념을 이용하여 문제를 풀고, 현실세계의 비선형 문제중 하나 인 최단 경로 구하기(Graph)의 근사해로 많이 이용된다. 
+  - 여러가지 상황들을 고려 (비선형적인 trade-off, graph)
 
-## 예시
+
+
+*_Keyward: 최적화문제풀이용 알고리즘, 근시안적, 근사치 ,욕심_
+
+
+
+### 예시
+
 1. 수업 시간표 짜기 문제. 
 - 당신은 학교에서 되도록 많은 수업을 듣고 싶어한다. 당신이 신청할 수 있는 과목의 목록은 다음과 같다. 
    <img width="400" alt="P1" src="https://user-images.githubusercontent.com/39859458/68654715-e2a30800-0571-11ea-8078-768b4ad8c07f.png">
@@ -90,40 +101,51 @@ print(final_stations)
 
 ```
 
-## 관련 개념. 
+
+
+### 관련 개념
+
 1. 집합: 멱집합
 2. graph
 3. NP완전문제(Nondeterministic Polynomial-. Complete), 집합 커버링 문제(set-covering problem)
     - NP 집합에 속하는 결정 문제 중에서 가장 어려운 문제의 부분집합으로, 모든 NP 문제를 다항 시간 내에 NP-완전 문제로 환산할 수 있다. NP-완전 문제 중 하나라도 P에 속한다는 것을 증명한다면 모든 NP 문제가 P에 속하기 때문에, P-NP 문제가 P=NP의 형태로 풀리게 된다. 반대로 NP-완전 문제 중의 하나가 P에 속하지 않는다는 것이 증명된다면 P=NP에 대한 반례가 되어 P-NP 문제는 P≠NP의 형태로 풀리게 된다.
 4. 동적 프로그래밍 
 
-#### 그래프
+
+
+#### 2. 그래프
+
 <img width="500" alt="G1" src="https://user-images.githubusercontent.com/39859458/68653936-2dbc1b80-0570-11ea-86d1-d7f0add5e70d.png">
 
 <img width="500" alt="G2" src="https://user-images.githubusercontent.com/39859458/68653966-3f052800-0570-11ea-9ba7-8214270c12db.png">
 
 
 
-#### NP문제 예시: 가장 훌륭한 풋볼 팀 선수 고르기. 
+#### 3. NP문제 예시: 가장 훌륭한 풋볼 팀 선수 고르기. 
    <img width="300" alt="football" src="https://user-images.githubusercontent.com/39859458/68654366-1cbfda00-0571-11ea-8677-e1e29d3a2bb4.png">
-   
+
 - https://namu.wiki/w/P-NP%20%EB%AC%B8%EC%A0%9C
 
 - https://ko.wikipedia.org/wiki/NP-%EC%99%84%EC%A0%84
 
-#### 동적 프로그래밍 
+
+
+#### 4. 동적 프로그래밍 
+
 - 1950년대 Richard Bellman에 의해 나온 용어로, 그 당시에는 "설계"와 "동적 프로그래밍"이 다중 단계 처리를 최적으로 계획한다는 것을 의미했다. 
 - 비순환 그래프에서 각 노드의 상태를 표시하고, 가장 왼쪽의 노드를 출발점으로하고 상태를 떠나는 간선들을 가능한 동작으로 표현하고 다음 단위 시간에 다른 상태들을 이끌어내는 것과 같은 처리가 서서히 전개할 수 있는 방법들을 설명하는 것 (출처, 알고리즘, chapter6)
-- 파이썬에서 동적 프로그래밍 (동적 Typing)은 변수 선언시 변수 type을 명시하지 않아도 저절로 변수 type이 할당 되는 것. 
 
 
-# 관련 문제
+
+### 관련 문제
 
 [leetcode-921.Minimum Add to Make Parentheses Vlalid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)
 
 [leetcode-861.Score After Flipping Matrix](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
-# 출처
+
+
+### 출처
 
 - [알고리즘, 사이텍미디어 출판 - 오경수/강희중/안효범/임재걸 공역]
 - [Hello Coding 그림으로 개념을 이해하는 알고리즘]
