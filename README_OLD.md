@@ -80,3 +80,159 @@
 - 예지 자료구조 A+ 기원
 
 
+
+## 2019/10/15
+
+1주차 - 슈퍼스타트 강남점 7시 
+
+- 동적 계획법 
+
+  - 발표 : 이동주
+  - 문제 
+    - https://leetcode.com/problems/maximum-subarray/
+    - https://leetcode.com/problems/climbing-stairs/
+
+- 스택 / 큐
+
+  - 발표 : 장지창
+
+    - https://planjang.tistory.com/211
+
+  - 문제
+
+    <스택>
+
+    - https://leetcode.com/problems/valid-parentheses/
+
+    - https://leetcode.com/problems/min-stack/
+
+      <큐>
+
+    - https://leetcode.com/problems/number-of-recent-calls/
+
+    - https://programmers.co.kr/learn/courses/30/lessons/42587
+
+- 회고: 한수민
+
+  - 스터디 브랜치는 자신의 영어 이름으로 판다.
+  - __src/name__  안에 _week.md_  로 파기
+  - 문제 제목은 h1 로 , 안의 내용은 "```python" 으로 명시하기 
+  - 시간복잡도 넣기 
+
+
+
+## 2019/10/29
+
+2주차 - 스터디 블룸 7시 
+
+- 트리
+  - 발표: 조예지
+    - <https://leetcode.com/problems/maximum-depth-of-binary-tree/>
+    - <https://leetcode.com/problems/merge-two-binary-trees/>
+- 해시
+  - 발표: 한수민
+  - 문제
+    - <https://leetcode.com/problems/single-number/>
+    - <https://leetcode.com/problems/two-sum/>
+
+##### 벌금
+
+- 지각 : 이동주 (1,000원)
+- 결석 : 김은향 (1번 면제)
+- 과제 : 김은향 (1,000원)
+
+
+
+## 2019/11/05
+
+3주차 - 슈퍼스타트 7시 
+
+- 정렬
+  - 발표: 김건호
+  - 문제
+    - <https://leetcode.com/problems/k-closest-points-to-origin/>
+    - <https://leetcode.com/problems/valid-anagram/>
+- 힙
+  - 발표: 김은향
+  - 문제 
+    - <https://leetcode.com/problems/last-stone-weight/>
+    - <https://leetcode.com/problems/top-k-frequent-elements/>
+
+##### 벌금
+
+- 결석 : 장지창 (1번 면제) 🎂축생일🎂
+
+
+
+## 2019/11/12
+
+4주차 - 슈퍼스타트 7시
+
+- 이분탐색
+  - 발표: 장지창
+  - 문제
+    - <https://leetcode.com/problems/intersection-of-two-arrays-ii/>
+    - <https://leetcode.com/problems/find-the-duplicate-number/>
+- 그리디
+  - 발표:손주영
+  - 문제
+    - <https://leetcode.com/problems/score-after-flipping-matrix/>
+    - <https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/>
+
+##### 비고
+
+- 결석으로 발표를 하지 못하는 코딩고수씨를 대신해, 깜짝손님 주영언니가 그리디를 발표하게 되었습니다!
+
+##### 벌금
+
+- 결석: 이동주 (1번 면제) 🎂축생일🎂
+- 결석: 조예지 (1번 면제) 
+
+- 과제 지각 : 조예지(1,000원), 김은향(1,000원)
+
+
+
+## 2019/11/19
+
+5주차 - 슈퍼스타트 7시 (예약자: 장고장)
+
+- 그래프
+  - 발표: 조예지
+  - 문제
+    - <https://leetcode.com/problems/find-the-town-judge/>
+    - <https://leetcode.com/problems/regions-cut-by-slashes/>
+- 완전탐색
+  - 발표: 한수민 (발표할게 별로 없을것 같아, 문제 4개 + )
+  - 문제: 프로그래머스 4문제
+    - <https://programmers.co.kr/learn/courses/30/lessons/42840>
+    - <https://programmers.co.kr/learn/courses/30/lessons/42839>
+    - <https://programmers.co.kr/learn/courses/30/lessons/42841>
+    - <https://programmers.co.kr/learn/courses/30/lessons/42842>
+
+##### 벌금
+
+- 과제 : 김은향 (2,000원), 장지창(1,000원), 이동주(1,000원), 조예지(1,000원), 한수민(1,000원)
+- 결석 : 김건호 (1번 면제)
+
+## 2019/11/26
+
+6주차 
+
+- ##### BFS
+
+  - 발표: 김은향 
+  - 문제:
+    - https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
+    - https://leetcode.com/problems/binary-tree-level-order-traversal/submissions/
+
+- ##### DFS
+
+  - 발표: 김건호 
+  - 문제
+    - <https://leetcode.com/problems/symmetric-tree/>
+    - <https://leetcode.com/problems/course-schedule/>
+
+- 결석: 한수민 (1번 면제), 이동주(5,000원)
+
+- 과제: 한수민 (2,000원), 장지창(1,000원), 김은향(3,000원)
+

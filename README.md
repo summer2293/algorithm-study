@@ -42,8 +42,6 @@
 
 - 시간복잡도 공간 복잡도는 주석으로 작성해서 넣는다. 
 
-- - 
-
 - ##### 새로 안 사실 정해주기 
 
   ```
@@ -56,10 +54,6 @@
   ```
 
 - ##### 코드를 짜면서 새로 배운 라이브러리가 있다면 공유하쟈 
-
-- 
-
-
 
 
 
@@ -77,9 +71,44 @@
 
 ##### 과제 안할 경우 
 
-- 월요일 22:00 시 미제출 경우 
+- 금요일 00:00 시 미제출 경우 
   - 1,000원 + 피보나치 (지각 동일)
-- 화요일에 랜덤으로 정해서 코드 리뷰를 한다.  설명 못하면 과제 1000원! 
+
+
+
+# schedule
+
+## 2020/01/18 
+
+- 1/18일 1주차 : 공통 6문제 + 개인문제 1문제 
+
+- __업로드 폴더__ : __src/programmers__ 
+
+- ##### 파일 명: __week1.md__ 
+
+- ##### 공통문제
+
+  - 모의고사 : <https://programmers.co.kr/learn/courses/30/lessons/42840>
+  - 완주하지 못한 선수: <https://programmers.co.kr/learn/courses/30/lessons/42576>
+  - 자릿 수 더하기: <https://programmers.co.kr/learn/courses/30/lessons/12931>
+  - 예산: <https://programmers.co.kr/learn/courses/30/lessons/12982>
+  - 실패율: <https://programmers.co.kr/learn/courses/30/lessons/42889>
+  - 다트게임: <https://programmers.co.kr/learn/courses/30/lessons/17682>
+
+- ##### 개별문제
+
+  - 이동주 
+    - 하샤드 수 
+    -  <https://programmers.co.kr/learn/courses/30/lessons/12947>
+  - 장지창 
+    - 행렬의 덧셈
+    - <https://programmers.co.kr/learn/courses/30/lessons/12950>
+  - 한수민 
+    - 이상한 문자 만들기
+    - <https://programmers.co.kr/learn/courses/30/lessons/12930>
+
+- 비고 
+  - 결석: 수민
 
 
 
@@ -87,7 +116,7 @@
 
 ## 회고
 
-10/29
+#### 10/29
 
 ##### is 연산자
 
@@ -119,7 +148,7 @@ AVL 트리는 모든 internal node v에 대해, v의 자식들의 높이가 최�
 
 
 
-11/05
+#### 11/05
 
 ##### for _ in range(k)
 
@@ -164,191 +193,5 @@ print(c2.most_common(3))
 
 
 
-## 2019/10/15
+> 이전 스터디 기록은 README_OLD로 옮겼습니다.
 
-1주차 - 슈퍼스타트 강남점 7시 
-
-- 동적 계획법 
-
-  - 발표 : 이동주
-  - 문제 
-    - https://leetcode.com/problems/maximum-subarray/
-    - https://leetcode.com/problems/climbing-stairs/
-
-- 스택 / 큐
-
-  - 발표 : 장지창
-
-    - https://planjang.tistory.com/211
-
-  - 문제
-
-    <스택>
-
-    - https://leetcode.com/problems/valid-parentheses/
-
-    - https://leetcode.com/problems/min-stack/
-
-      <큐>
-
-    - https://leetcode.com/problems/number-of-recent-calls/
-
-    - https://programmers.co.kr/learn/courses/30/lessons/42587
-
-- 회고: 한수민
-
-  - 스터디 브랜치는 자신의 영어 이름으로 판다.
-  - __src/name__  안에 _week.md_  로 파기
-  - 문제 제목은 h1 로 , 안의 내용은 "```python" 으로 명시하기 
-  - 시간복잡도 넣기 
-
-
-
-## 2019/10/29
-
-2주차 - 스터디 블룸 7시 
-
-- 트리
-  - 발표: 조예지
-    - <https://leetcode.com/problems/maximum-depth-of-binary-tree/>
-    - <https://leetcode.com/problems/merge-two-binary-trees/>
-- 해시
-  - 발표: 한수민
-  - 문제
-    - <https://leetcode.com/problems/single-number/>
-    - <https://leetcode.com/problems/two-sum/>
-
-##### 벌금
-
-- 지각 : 이동주 (1,000원)
-- 결석 : 김은향 (1번 면제)
-- 과제 : 김은향 (1,000원)
-
-
-
-## 2019/11/05
-
-3주차 - 슈퍼스타트 7시 
-
-- 정렬
-  - 발표: 김건호
-  - 문제
-    - <https://leetcode.com/problems/k-closest-points-to-origin/>
-    - <https://leetcode.com/problems/valid-anagram/>
-- 힙
-  - 발표: 김은향
-  - 문제 
-    - <https://leetcode.com/problems/last-stone-weight/>
-    - <https://leetcode.com/problems/top-k-frequent-elements/>
-
-##### 벌금
-
-- 결석 : 장지창 (1번 면제) 🎂축생일🎂
-
-
-
-## 2019/11/12
-
-4주차 - 슈퍼스타트 7시
-
-- 이분탐색
-  - 발표: 장지창
-  - 문제
-    - <https://leetcode.com/problems/intersection-of-two-arrays-ii/>
-    - <https://leetcode.com/problems/find-the-duplicate-number/>
-- 그리디
-  - 발표:손주영
-  - 문제
-    - <https://leetcode.com/problems/score-after-flipping-matrix/>
-    - <https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/>
-
-##### 비고
-
-- 결석으로 발표를 하지 못하는 코딩고수씨를 대신해, 깜짝손님 주영언니가 그리디를 발표하게 되었습니다!
-
-##### 벌금
-
-- 결석: 이동주 (1번 면제) 🎂축생일🎂
-- 결석: 조예지 (1번 면제) 
-
-- 과제 지각 : 조예지(1,000원), 김은향(1,000원)
-
-
-
-## 2019/11/19
-
-5주차 - 슈퍼스타트 7시 (예약자: 장고장)
-
-- 그래프
-  - 발표: 조예지
-  - 문제
-    - <https://leetcode.com/problems/find-the-town-judge/>
-    - <https://leetcode.com/problems/regions-cut-by-slashes/>
-- 완전탐색
-  - 발표: 한수민 (발표할게 별로 없을것 같아, 문제 4개 + )
-  - 문제: 프로그래머스 4문제
-    - <https://programmers.co.kr/learn/courses/30/lessons/42840>
-    - <https://programmers.co.kr/learn/courses/30/lessons/42839>
-    - <https://programmers.co.kr/learn/courses/30/lessons/42841>
-    - <https://programmers.co.kr/learn/courses/30/lessons/42842>
-
-##### 벌금
-
-- 과제 : 김은향 (2,000원), 장지창(1,000원), 이동주(1,000원), 조예지(1,000원), 한수민(1,000원)
-- 결석 : 김건호 (1번 면제)
-
-## 2019/11/26
-
-6주차 
-
-- ##### BFS
-
-  - 발표: 김은향 
-  - 문제:
-    - https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
-    - https://leetcode.com/problems/binary-tree-level-order-traversal/submissions/
-
-- ##### DFS
-
-  - 발표: 김건호 
-  - 문제
-    - <https://leetcode.com/problems/symmetric-tree/>
-    - <https://leetcode.com/problems/course-schedule/>
-
-- 결석: 한수민 (1번 면제), 이동주(5,000원), 장지창(5,000원)
-
-- 과제: 한수민 (2,000원), 장지창(1,000원), 김은향(3,000원)
-
-
-
-## 2020/01/18 
-
-- 1/18일 1주차 : 공통 6문제 + 개인문제 1문제 
-
-- __업로드 폴더__ : __src/programmers__ 
-
-- ##### 파일 명: __week1.md__ 
-
-- ##### 공통문제
-
-  - 모의고사 : <https://programmers.co.kr/learn/courses/30/lessons/42840>
-  - 완주하지 못한 선수: <https://programmers.co.kr/learn/courses/30/lessons/42576>
-  - 자릿 수 더하기: <https://programmers.co.kr/learn/courses/30/lessons/12931>
-  - 예산: <https://programmers.co.kr/learn/courses/30/lessons/12982>
-  - 실패율: <https://programmers.co.kr/learn/courses/30/lessons/42889>
-  - 다트게임: <https://programmers.co.kr/learn/courses/30/lessons/17682>
-
-- ##### 개별문제
-
-  - 이동주 
-    - 하샤드 수 
-    -  <https://programmers.co.kr/learn/courses/30/lessons/12947>
-  - 장지창 
-    - 행렬의 덧셈
-    - <https://programmers.co.kr/learn/courses/30/lessons/12950>
-  - 한수민 
-    - 이상한 문자 만들기
-    - <https://programmers.co.kr/learn/courses/30/lessons/12930>
-
-- 비고 
-  - 결석: 수민
