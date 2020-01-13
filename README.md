@@ -1,45 +1,65 @@
 # algorithm-study
-prography 5th algorithm study 룰 정리 
+
+프로그라피 5기 알고리즘 스터디 입니다.
+
+4주간 프로그래머스 단계별 알고리즘 문제 스터디 진행방식 및 회고입니다.
 
 ## Rule  
 
-##### 시간
+#### ⏱ 시간
 
-- 강남역 매주 화요일 7시 
+- 역삼역 매주 토요일 11시 (4주)
 - 매주 스터디룸은 각 주 스터디 회고 담당이 예약한다.
+- 문제 제출 기한은 금요일 12시
 
-##### 스터디 방식  
+#### ✏️ 스터디 방식  
 
 - github을 통해 코드 공유 / 피드백
-- 프로그래머스 고득점 kit 10개 관련 개념 스터디 + 문제 풀이. 
-- 10가지 개념은 프로그래머스에서, 문제는 leetcode 에서 뽑아 진행한다. 
-  - 개념: https://programmers.co.kr/learn/challenges?tab=algorithm_practice_kit 
-  - 문제:  https://leetcode.com 
-- 매주 2개씩 스터디 총 5주를 진행한다.
-- 모든 스터디 원들은 2가지 유형에 대한 개념 공부와 그에 해당하는 알고리즘 문제 풀기
-- 문제는 유형별 2문제
-  - 스택/큐 경우 두가지 유형이기 때문에 4문제를 풀어야함 
-- 각 유형별로 한명씩 맡아 개념을 정리해오고, 관련 개념을 설명한다. 
-- 이후 해당 개념에 대해 풀어온 코드들을 리뷰한다. 
-- 해당 코드 리뷰어는 랜덤으로 뽑고, 설명을 하지 못했을 경우 과제 미비로 벌금을 내야한다
-- 매주 1명이 맡아 스터디 관련 내용을 기록한다 
-  - 새로 알게 된 내용, 몰라서 찾아본 내용, 벌금 관련 정리 등
-  - Readme.md 에 매주 정리해서 올려놓는다 
 
-##### 알고리즘 문제 제출 관련 
+- 프로그래머스 단계별 문제 풀이
 
-- 모든 스터디원들은, 스터디 전날 22:00 까지 자신의 푼 코드를 github 에 올린다 
-- 문제는  https://leetcode.com 에서 선별하며, 풀 문제는 관련 발표자가 제공한다.
-  - 문제가 어렵더라도 leetcode 에 답 보고 공부해오기! 
-- 파일 형식은  문제이름_자기이름.py (다 소문자)
-- 첫주는 .md 파일로 정리해서 한 파일에 코드 붙혀넣어 올리기! 
-- 문제 속도 주석으로 달아놓기!! 
+- ##### 코드 리뷰는 질문과 답변 성실하게, 온라인에서만 진행한다.
 
-##### 발표 관련
+- 1주차 (LV1) 7문제, 
 
-- 발표자료는 .md 파일의 형식을 가진다.
-- 알고리즘 기술 면접때 대답할 수 있을 정도의 간단한 자료면 충분하다.
-- 발표 자료는 월요일까지 안올려도됨. 
+- 2주차 (LV2) 5문제,
+
+- 3주차 (LV3)  3문제
+
+- 4주차 (LV4,5) 2문제로 진행한다.
+
+- __공통문제, 개별문제(1)문제__ 를 풀어오고, 개별 문제는 어떻게 접근했는지 자세히 서술한다
+
+  example
+
+  ```
+  완주하지 못한 선수에서 해시를 썻다
+  해시를 쓰면 문자열을 더욱 빠르게 찾기 웅앵웅
+  시간 복잡도 ㅇㅇㅇ
+  공간 복잡도 ㅇㅇㅇ
+  이런식으로 접근해서 풀었다 
+  ```
+
+- 시간복잡도 공간 복잡도는 주석으로 작성해서 넣는다. 
+
+- - 
+
+- ##### 새로 안 사실 정해주기 
+
+  ```
+  파이썬 안 자료형의 구현
+  이게 왜 재밌을까 생각해보면 씨나 자바 같은 언어는 인트가 사이즈가 있는데
+  우리 항상 파이썬 인트 쓰면서 물어보지 않은 질문들?
+  그런 작지만 은근 중요한 부분
+  엄청 어렵지 않고 우리가 다 알아들을 수 있으나 모를 법한 것들
+  그런거 하나씩 번갈아가면서 준비하는게 좋을거 같아
+  ```
+
+- ##### 코드를 짜면서 새로 배운 라이브러리가 있다면 공유하쟈 
+
+- 
+
+
 
 
 
@@ -61,11 +81,7 @@ prography 5th algorithm study 룰 정리
   - 1,000원 + 피보나치 (지각 동일)
 - 화요일에 랜덤으로 정해서 코드 리뷰를 한다.  설명 못하면 과제 1000원! 
 
-##### 기타
 
-- 해당 5주가 끝난 이후 코딩 테스트 문제 풀어보기 
-- 매주 스터디 끝나고 방식 논의하면서 차츰 수정하기 
-- 예지 자료구조 A+ 기원
 
 
 
@@ -147,31 +163,24 @@ print(c2.most_common(3))
   - 코드를 읽는 사람이 왜 `None`을 반환하는지 명확하게 유추할 수 없음 -> `raise CustomException`을 발생시켜서 명확히 어떤 상황인지 명시하는게 
 
 
-##### 위상 정렬
-
-<https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html>
-
-위상 정렬(topological sorting)은 유향 그래프의 꼭짓점들(vertex)을 변의 방향을 거스르지 않도록 나열하는 것을 의미한다. 
-
-위상정렬을 가장 잘 설명해 줄 수 있는 예로 대학의 선수과목(prerequisite) 구조를 예로 들 수 있다. 만약 특정 수강과목에 선수과목이 있다면 그 선수 과목부터 수강해야 하므로, 특정 과목들을 수강해야 할 때 위상 정렬을 통해 올바른 수강 순서를 찾아낼 수 있다. 
-
-이와 같이 선후 관계가 정의된 그래프 구조 상에서 선후 관계에 따라 정렬하기 위해 위상 정렬을 이용할 수 있다. 
-
-정렬의 순서는 유향 그래프의 구조에 따라 여러 개의 종류가 나올 수 있다. 위상 정렬이 성립하기 위해서는 반드시 그래프의 순환이 존재하지 않아야 한다. 즉, 그래프가 비순환 유향 그래프(directed acyclic graph)여야 한다.
 
 ## 2019/10/15
 
 1주차 - 슈퍼스타트 강남점 7시 
 
 - 동적 계획법 
+
   - 발표 : 이동주
   - 문제 
     - https://leetcode.com/problems/maximum-subarray/
     - https://leetcode.com/problems/climbing-stairs/
+
 - 스택 / 큐
+
   - 발표 : 장지창
 
     - https://planjang.tistory.com/211
+
   - 문제
 
     <스택>
@@ -189,13 +198,9 @@ print(c2.most_common(3))
 - 회고: 한수민
 
   - 스터디 브랜치는 자신의 영어 이름으로 판다.
-
   - __src/name__  안에 _week.md_  로 파기
-
   - 문제 제목은 h1 로 , 안의 내용은 "```python" 으로 명시하기 
-
   - 시간복잡도 넣기 
-
 
 
 
@@ -204,16 +209,12 @@ print(c2.most_common(3))
 2주차 - 스터디 블룸 7시 
 
 - 트리
-
   - 발표: 조예지
     - <https://leetcode.com/problems/maximum-depth-of-binary-tree/>
     - <https://leetcode.com/problems/merge-two-binary-trees/>
-
 - 해시
   - 발표: 한수민
-
   - 문제
-
     - <https://leetcode.com/problems/single-number/>
     - <https://leetcode.com/problems/two-sum/>
 
@@ -234,7 +235,6 @@ print(c2.most_common(3))
   - 문제
     - <https://leetcode.com/problems/k-closest-points-to-origin/>
     - <https://leetcode.com/problems/valid-anagram/>
-
 - 힙
   - 발표: 김은향
   - 문제 
@@ -256,7 +256,6 @@ print(c2.most_common(3))
   - 문제
     - <https://leetcode.com/problems/intersection-of-two-arrays-ii/>
     - <https://leetcode.com/problems/find-the-duplicate-number/>
-
 - 그리디
   - 발표:손주영
   - 문제
@@ -272,7 +271,7 @@ print(c2.most_common(3))
 - 결석: 이동주 (1번 면제) 🎂축생일🎂
 - 결석: 조예지 (1번 면제) 
 
-
+- 과제 지각 : 조예지(1,000원), 김은향(1,000원)
 
 
 
@@ -293,31 +292,63 @@ print(c2.most_common(3))
     - <https://programmers.co.kr/learn/courses/30/lessons/42841>
     - <https://programmers.co.kr/learn/courses/30/lessons/42842>
 
+##### 벌금
 
-
+- 과제 : 김은향 (2,000원), 장지창(1,000원), 이동주(1,000원), 조예지(1,000원), 한수민(1,000원)
+- 결석 : 김건호 (1번 면제)
 
 ## 2019/11/26
 
-6주차 - 슈퍼스타트 7시 (예약자: 장고장)
+6주차 
 
-- 깊이우선탐색
-  - 발표: 김건호
+- ##### BFS
+
+  - 발표: 김은향 
+  - 문제:
+    - https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
+    - https://leetcode.com/problems/binary-tree-level-order-traversal/submissions/
+
+- ##### DFS
+
+  - 발표: 김건호 
   - 문제
     - <https://leetcode.com/problems/symmetric-tree/>
     - <https://leetcode.com/problems/course-schedule/>
-- 너비우선탐색
-  - 발표: 김은향
-  - 문제
-    - <https://leetcode.com/problems/maximum-depth-of-n-ary-tree/>
-    - <https://leetcode.com/problems/binary-tree-level-order-traversal/>
+
+- 결석: 한수민 (1번 면제), 이동주(5,000원), 장지창(5,000원)
+
+- 과제: 한수민 (2,000원), 장지창(1,000원), 김은향(3,000원)
 
 
 
-## 계획
+## 2020/01/18 
 
-- 벌금 기준을 타이트하게 하자!!!
-- 예약 시 인원 중 불참 인원이 생길 시 예약을 취소할 수 없으므로, 불참 인원은 개인의 스터디룸 이용비를 지불한다.
-- 문제를 못풀 경우, 자신이 문제를 풀려고 시도했던 접근 생각을 말한다. (못푼 사람부터 대화 시작)
-- 다음 회의 일자: 12/03
-- 뒤풀이 일자: 추후 논의
-- 다음 시작일자: 추후 논의
+- 1/18일 1주차 : 공통 6문제 + 개인문제 1문제 
+
+- __업로드 폴더__ : __src/programmers__ 
+
+- ##### 파일 명: __week1.md__ 
+
+- ##### 공통문제
+
+  - 모의고사 : <https://programmers.co.kr/learn/courses/30/lessons/42840>
+  - 완주하지 못한 선수: <https://programmers.co.kr/learn/courses/30/lessons/42576>
+  - 자릿 수 더하기: <https://programmers.co.kr/learn/courses/30/lessons/12931>
+  - 예산: <https://programmers.co.kr/learn/courses/30/lessons/12982>
+  - 실패율: <https://programmers.co.kr/learn/courses/30/lessons/42889>
+  - 다트게임: <https://programmers.co.kr/learn/courses/30/lessons/17682>
+
+- ##### 개별문제
+
+  - 이동주 
+    - 하샤드 수 
+    -  <https://programmers.co.kr/learn/courses/30/lessons/12947>
+  - 장지창 
+    - 행렬의 덧셈
+    - <https://programmers.co.kr/learn/courses/30/lessons/12950>
+  - 한수민 
+    - 이상한 문자 만들기
+    - <https://programmers.co.kr/learn/courses/30/lessons/12930>
+
+- 비고 
+  - 결석: 수민
