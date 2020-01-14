@@ -106,11 +106,15 @@
   - 한수민 
     - 이상한 문자 만들기
     - <https://programmers.co.kr/learn/courses/30/lessons/12930>
+  - 고기훈
+    - 문자열압축
+    - <https://programmers.co.kr/learn/courses/30/lessons/60057>
+  - 조예지
+    - 콜라츠추측
+    - <https://programmers.co.kr/learn/courses/30/lessons/12943>
 
 - 비고 
-  - 결석: 수민
-
-
+  - 결석: 수민, 기훈
 
 
 
