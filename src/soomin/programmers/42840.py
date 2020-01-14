@@ -1,18 +1,34 @@
-def solution(answers):    
-    st1 = [1, 2, 3, 4, 5]
-    st2 = [2, 1, 2, 3, 2, 4, 2, 5]
-    st3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
-    st_box = [0] * 3
-    result = []
-    for i,v in enumerate(answers):
-        if (st1[i % len(st1)] == v):
-            st_box[0] += 1
-        if (st2[i % len(st2)] == v):
-            st_box[1] += 1
-        if (st3[i % len(st3)] == v):
-            st_box[2] += 1         
+
+# 모의고사 https://programmers.co.kr/learn/courses/30/lessons/42840
+def solution(answers):
+    # 이전 코드와 달리 확장성 위해 arr 로 변경 
+    students = [[1, 2, 3, 4, 5], 
+                [2, 1, 2, 3, 2, 4, 2, 5], 
+                [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]]
+    for i, student in enumerate(students):
+        count = 0 
+        for n, answer in enumerate(answers):
+            order = n % len(student)
+            if student[order] == answer:
+                count += 1
+        students[i] = count
+    return [i + 1 for i, v in enumerate(students) if v == max(students)]
+
+# def solution(answers):    
+#     st1 = [1, 2, 3, 4, 5]
+#     st2 = [2, 1, 2, 3, 2, 4, 2, 5]
+#     st3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
+#     st_box = [0] * 3
+#     result = []
+#     for i,v in enumerate(answers):
+#         if (st1[i % len(st1)] == v):
+#             st_box[0] += 1
+#         if (st2[i % len(st2)] == v):
+#             st_box[1] += 1
+#         if (st3[i % len(st3)] == v):
+#             st_box[2] += 1         
     
-    return [i + 1 for i, v in enumerate(st_box) if v == max(st_box)]
+#     return [i + 1 for i, v in enumerate(st_box) if v == max(st_box)]
 
 # 모의고사
 # 문제 설명
