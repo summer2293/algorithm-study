@@ -52,3 +52,67 @@ def solution(answers):
 
 
 ```
+
+# [programmers - 콜라츠 추측] (https://programmers.co.kr/learn/courses/30/lessons/12943)
+
+```python
+def solution(n):
+    answer = 0
+
+    for answer in range(500):
+        if n % 2 == 0:
+            n = n / 2
+        else:
+            n = n*3 +1
+        if n == 1:
+            return answer + 1
+    return -1
+
+# testcase 13 실패
+
+def solution(n):
+    answer = 0
+    for answer in range(500):
+        n = n / 2 if n % 2 == 0 else n * 3 + 1
+        if n == 1:
+            return answer + 1
+    return -1
+    
+# testcase 13 실패
+
+```
+
+```pyhton
+
+삼항 연산자 (Tenary operators)
+
+참인 경우 값 if 조건 else 거짓인 경우 값
+
+
+```
+
+# [Programmers - 완주하지 못한 선수] (https://programmers.co.kr/learn/courses/30/lessons/42576)
+
+```python
+
+
+
+```
+
+# [Programmers - 예산] (https://programmers.co.kr/learn/courses/30/lessons/12982)
+
+```python
+
+```
+
+# [Programmers - [1차]다트 게임](https://programmers.co.kr/learn/courses/30/lessons/17682)
+
+```python
+
+```
+
+# [Programmers - 실패율] (https://programmers.co.kr/learn/courses/30/lessons/42889)
+
+```python
+
+```
