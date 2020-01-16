@@ -174,6 +174,28 @@ def solution(n):
 
 ```python
 
+from operator import eq
+
+def solution(participant, completion):
+    
+    answer = []
+    participant.sort()
+    completion.sort()
+    print(participant)
+    print(completion)
+    
+    flag = True 
+    for i in range(len(completion)):
+        if not eq(participant[i], completion[i]):
+            flag = False
+            break
+        if flag:
+            answer = participant[len(participant)-1]
+        
+        return answer
+
+# 실패
+
 def solution(participant, completion):
     
     participant.sort()
@@ -184,6 +206,8 @@ def solution(participant, completion):
             return par
     
     return participant[-1]
+
+
 
 # 정확성  테스트
 # 테스트 1 〉	통과 (0.04ms, 10.7MB)
@@ -198,6 +222,19 @@ def solution(participant, completion):
 # 테스트 4 〉	통과 (90.30ms, 168MB)
 # 테스트 5 〉	통과 (85.18ms, 167MB)
 
+
+```
+
+```python
+from operator import eq
+
+a와 b사이에 비교를 수행
+eq(a,b) => a == b
+ne(a,b) => a != b
+lt(a,b) => a < b
+le(a,b) => a <= b
+gt(a,b) => a > b
+ge(a,b) => a >= b
 
 ```
 
@@ -254,3 +291,4 @@ def solution(d, budget):
 ```python
 
 ```
+
