@@ -11,20 +11,13 @@ def failure_rate(N, stages):
 
     """
     stages_dict = Counter(stages)
-    stages_dict['total'] = len(stages)
+    denominator = len(stages)
     failure_rating = {}
-
-    # for index in stages:
-    #     try:
-    #         stages_dict[index] += 1
-    #     except:
-    #         stages_dict[index] = 1
-    #     stages_dict['total'] += 1
 
     for index in range(1, N+1):
         try:
-            failure_rating[index] = (stages_dict[index] / stages_dict['total'])
-            stages_dict['total'] -= stages_dict[index]
+            failure_rating[index] = (stages_dict[index] / denominator)
+            denominator -= stages_dict[index]
         except:
             failure_rating[index] = 0
 
