@@ -402,5 +402,18 @@ def solution(d, budget):
 
 ```
 
+
+```python
+람다(Lambda)
+
+lambda 인자 : 표현식
+
+def hap(x,y):
+    return x+y
+
+(lambda x,y : x+1)(10,20)
+
+```
+
 # [해설](https://tech.kakao.com/2018/09/21/kakao-blind-recruitment-for2019-round-1/)
 
