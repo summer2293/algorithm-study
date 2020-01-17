@@ -1,4 +1,9 @@
 def sum_of_array(arr1, arr2):
+    """두 행렬의 덧셈을 구하라.
+
+    시간 복잡도:
+    arr1가 M x N 크기의 행렬이라고 할 떄 O(NM)
+    """
     return [sum_of_rows_in_arrays(arr1[row], arr2[row]) for row in range(len(arr1))]
 
 

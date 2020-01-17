@@ -4,10 +4,16 @@ exponents = {'S': 1, 'D': 2, 'T': 3}
 
 
 def dart_game(dart):
-    return mathematical_expression_to_score(make_mathematical_expression(game_to_token(split_dart_game(dart))))
+    """다트게임의 문자열이 주어지면 총점수를 반환하라.
+
+    
+    """
+    return mathematical_expression_to_score(
+        make_mathematical_expression(game_to_token(split_dart_game(dart))))
 
 
 def mathematical_expression_to_score(mathematical_expressions):
+
     total = 0
     for mathematical_expression in mathematical_expressions:
         total += mathematical_expression[0] ** mathematical_expression[1] * \

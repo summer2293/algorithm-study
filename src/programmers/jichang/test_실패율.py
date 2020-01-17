@@ -1,5 +1,10 @@
 # 실패율 https://programmers.co.kr/learn/courses/30/lessons/42889
 def failure_rate(N, stages):
+    """스테이지의 수 N과 사용자가 현재 멈춰있는 스테이지의 번호가 담긴 배열 stages가 주어질 때, 실패율이 높은 스테이지부터
+    내림차순으로 스테이지의 번호가 담겨있는 배열을 구한다.
+    시간 복잡도:
+
+    """
     stages_dict = {'total': 0}
     failure_rating = {}
 
