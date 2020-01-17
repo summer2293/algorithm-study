@@ -103,38 +103,3 @@ def test_split_dart_game():
     assert split_dart_game('1D#2S*3S') == ['1D#', '2S*', '3S']
     assert split_dart_game('1S*2T*3S') == ['1S*', '2T*', '3S']
     assert split_dart_game('10S*2T*10S#') == ['10S*', '2T*', '10S#']
-
-
-"""
-old solution
-def solution(dart):
-    answer = 0
-    result = list()
-    char = ["S", "D", "T", "#", "*"]
-    nscore = 0
-    for i in range(len(dart)):
-        if dart[i] not in char:
-            nscore = nscore * 10 + int(dart[i])
-            print(nscore)
-        else:
-            if dart[i] == "S":
-                pass
-            elif dart[i] == "D":
-                nscore = nscore * nscore
-            elif dart[i] == "T":
-                nscore = nscore * nscore * nscore
-            elif dart[i] == "#":
-                nscore = nscore * -1
-            elif dart[i] == "*":
-                nscore = nscore * 2
-                if len(result) > 0:
-                    result[-1] = result[-1] * 2
-            if i + 1 < len(dart):
-                if dart[i + 1] not in char:
-                    result.append(nscore)
-                    nscore = 0
-    result.append(nscore)
-    for i in result:
-        answer += i
-    return answer
-"""
