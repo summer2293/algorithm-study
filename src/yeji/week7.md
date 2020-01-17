@@ -170,6 +170,103 @@ def solution(n):
 
 ```
 
+```java
+
+// 삼항연산자가 num = num % 2 == 0 ? num / 2 : num * 3 + 1
+
+class Solution{
+    public int solution(int num){
+        int answer = 0;
+        while(num != 1){
+            answer += 1;
+            num = num % 2 == 0 ? num / 2 : num * 3 + 1;
+            if(answer == 500) return -1;
+        }
+        return answer;
+    }
+}
+
+// 테스트 1
+// 입력값 〉	6
+// 기댓값 〉	8
+// 실행 결과 〉	테스트를 통과하였습니다.
+// 테스트 2
+// 입력값 〉	16
+// 기댓값 〉	4
+// 실행 결과 〉	테스트를 통과하였습니다.
+// 테스트 3
+// 입력값 〉	626331
+// 기댓값 〉	-1
+// 실행 결과 〉	실행한 결괏값 488이(가) 기댓값 -1와(과) 다릅니다.
+
+// long 강제형변환
+
+class Solution {
+    public int solution(int number){
+        int answer = 0;
+        long num = (long)number;
+        while(num != 1){
+            answer += 1;
+            num = num % 2 == 0 ? num/2 : num*3+1;
+            if(answer == 500) return -1;
+            
+        }
+        return answer;
+    }
+}
+
+// 테스트 1 〉	통과 (0.77ms, 50.1MB)
+// 테스트 2 〉	통과 (0.74ms, 51MB)
+// 테스트 3 〉	통과 (0.72ms, 49.9MB)
+// 테스트 4 〉	통과 (0.87ms, 51.9MB)
+// 테스트 5 〉	통과 (0.83ms, 50.3MB)
+// 테스트 6 〉	통과 (0.70ms, 54.8MB)
+// 테스트 7 〉	통과 (0.78ms, 50.4MB)
+// 테스트 8 〉	통과 (1.21ms, 52.6MB)
+// 테스트 9 〉	통과 (0.76ms, 50.3MB)
+// 테스트 10 〉	통과 (0.83ms, 52.3MB)
+// 테스트 11 〉	통과 (0.83ms, 52.4MB)
+// 테스트 12 〉	통과 (0.77ms, 52.7MB)
+// 테스트 13 〉	통과 (0.73ms, 52.6MB)
+// 테스트 14 〉	통과 (0.72ms, 52.6MB)
+// 테스트 15 〉	통과 (0.82ms, 52.5MB)
+// 테스트 16 〉	통과 (0.77ms, 49.9MB)
+
+// 삼항연산자가 num = num % 2 == 1 ? num*3+1:num/2 일 경우
+class Solution{
+    public int solution(int num){
+        int answer = 0;
+        while(num != 1){
+            answer += 1;
+            num = num % 2 == 1 ? num*3+1:num/2;
+            if(answer == 500) return -1;
+            
+        }
+        return answer;
+    }
+}
+
+// 테스트 1 〉	통과 (0.87ms, 50.1MB)
+// 테스트 2 〉	통과 (0.80ms, 52.3MB)
+// 테스트 3 〉	통과 (0.85ms, 52.4MB)
+// 테스트 4 〉	통과 (0.77ms, 51.9MB)
+// 테스트 5 〉	통과 (0.70ms, 54.3MB)
+// 테스트 6 〉	통과 (0.80ms, 52.3MB)
+// 테스트 7 〉	통과 (0.70ms, 52.5MB)
+// 테스트 8 〉	통과 (0.79ms, 50.3MB)
+// 테스트 9 〉	통과 (0.83ms, 52.3MB)
+// 테스트 10 〉	통과 (0.83ms, 52MB)
+// 테스트 11 〉	통과 (0.88ms, 53MB)
+// 테스트 12 〉	통과 (0.76ms, 52.4MB)
+// 테스트 13 〉	통과 (0.76ms, 54.3MB)
+// 테스트 14 〉	통과 (0.72ms, 52.3MB)
+// 테스트 15 〉	통과 (0.81ms, 54.1MB)
+// 테스트 16 〉	통과 (0.73ms, 50.7MB)
+
+
+
+```
+
 # [Programmers - 완주하지 못한 선수] (https://programmers.co.kr/learn/courses/30/lessons/42576)
 
 ```python
