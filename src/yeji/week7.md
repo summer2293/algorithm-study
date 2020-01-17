@@ -292,3 +292,5 @@ def solution(d, budget):
 
 ```
 
+# [해설](https://tech.kakao.com/2018/09/21/kakao-blind-recruitment-for2019-round-1/)
+
