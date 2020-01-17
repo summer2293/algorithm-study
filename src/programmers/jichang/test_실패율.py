@@ -1,19 +1,25 @@
 # 실패율 https://programmers.co.kr/learn/courses/30/lessons/42889
+from collections import Counter
+
 def failure_rate(N, stages):
     """스테이지의 수 N과 사용자가 현재 멈춰있는 스테이지의 번호가 담긴 배열 stages가 주어질 때, 실패율이 높은 스테이지부터
     내림차순으로 스테이지의 번호가 담겨있는 배열을 구한다.
+
     시간 복잡도:
+    stages의 길이를 s, 스테이지의 수를 N이라고 할 때
+    O(s)
 
     """
-    stages_dict = {'total': 0}
+    stages_dict = Counter(stages)
+    stages_dict['total'] = len(stages)
     failure_rating = {}
 
-    for index in stages:
-        try:
-            stages_dict[index] += 1
-        except:
-            stages_dict[index] = 1
-        stages_dict['total'] += 1
+    # for index in stages:
+    #     try:
+    #         stages_dict[index] += 1
+    #     except:
+    #         stages_dict[index] = 1
+    #     stages_dict['total'] += 1
 
     for index in range(1, N+1):
         try:
