@@ -82,9 +82,7 @@
 
 - 1/18일 1주차 : 공통 6문제 + 개인문제 1문제 
 
-- __업로드 폴더__ : __src/programmers__ 
-
-- ##### 파일 명: __week1.md__ 
+- ##### 파일 명: __week7.md__ 
 
 - ##### 공통문제
 
@@ -114,8 +112,38 @@
     - <https://programmers.co.kr/learn/courses/30/lessons/12943>
 
 - 비고 
-  - 결석: 수민, 기훈
+  - 결석: 기훈
+  - 서울대입구 수요일 7:30 변경 
 
+
+## 2020/01/25 
+
+- 1/25일 2주차 : 공통 4문제 + 개인문제 1문제 
+
+- ##### 파일 명: __week8.md__ 
+
+- ##### 공통문제
+
+  - 오픈채팅방 <https://programmers.co.kr/learn/courses/30/lessons/42888>
+  - 멀쩡한 사각형: <https://programmers.co.kr/learn/courses/30/lessons/62048>
+  - 괄호 변환: <https://programmers.co.kr/learn/courses/30/lessons/60058>
+  - 124 나라의 숫자: <https://programmers.co.kr/learn/courses/30/lessons/12899>
+
+- ##### 개별문제
+
+  - 이동주 
+    - 주식 가격
+    -  <https://programmers.co.kr/learn/courses/30/lessons/42584 >
+  - 장지창 
+    - 
+
+  - 한수민 
+    - 캐시
+    - <https://programmers.co.kr/learn/courses/30/lessons/17680>
+  - 고기훈
+    - 
+  - 조예지
+    - 
 
 
 ## 회고
