@@ -89,7 +89,7 @@ def solution(answers):
 
 ```
 
-# [programmers - 콜라츠 추측] (https://programmers.co.kr/learn/courses/30/lessons/12943)
+# [programmers - 콜라츠 추측](https://programmers.co.kr/learn/courses/30/lessons/12943)
 
 ```python
 def solution(n):
@@ -267,7 +267,7 @@ class Solution{
 
 ```
 
-# [Programmers - 완주하지 못한 선수] (https://programmers.co.kr/learn/courses/30/lessons/42576)
+# [Programmers - 완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
 ```python
 
@@ -335,7 +335,7 @@ ge(a,b) => a >= b
 
 ```
 
-# [Programmers - 예산] (https://programmers.co.kr/learn/courses/30/lessons/12982)
+# [Programmers - 예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
 
 ```python
 
@@ -389,7 +389,7 @@ def solution(d, budget):
 
 ```
 
-# [Programmers - 실패율] (https://programmers.co.kr/learn/courses/30/lessons/42889)
+# [Programmers - 실패율](https://programmers.co.kr/learn/courses/30/lessons/42889)
 
 ```python
 
@@ -399,6 +399,21 @@ def solution(d, budget):
 #   3. 만들어둔 배열(각 스테이지별 사용자 수가 들어있는)을 순회하면서 stages를 참고해 스테이지별 실패율 계산
 #   4. 실패율을 구했다면 , 각 스테이지 번호와 묶어서 실패율을 내림차순으로 정렬
 #   5. 실패율이 같을 경우 스테이지 번호가 작은 것을 먼저 오도록 정렬
+
+def solution(N, stages):
+    buffer = {}
+    total = len(stages)
+    
+    for i in range(1, N+1):
+        if total != 0:
+            cnt = stages.count(i)
+            buffer[i] = cnt / total
+            total -= cnt
+        else:
+            buffer[i] = 0
+    
+    answer = sorted(buffer, key = lambda x: buffer[x], reverse = True)
+    return answer
 
 ```
 
