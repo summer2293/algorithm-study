@@ -1,5 +1,4 @@
 remainder_dict = {0:'4', 1:'1', 2:'2'}
-quotient_dict = {0:'', 1: '1', 2: '2', 3:'4'}
 
 def solution(n):
     print(n, end=' ')
