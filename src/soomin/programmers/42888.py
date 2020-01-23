@@ -16,9 +16,7 @@ def solution(record):
     for token in tokens:
         action, name = token[0], token[1]
         message = ""
-        try:
-            if action == "Enter" or "Leave":
-                message += user[name]+messages[action]
+        try: message += user[name]+messages[action]
         except: continue
         answer.append(message)
     return answer
