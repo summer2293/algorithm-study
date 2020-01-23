@@ -138,9 +138,18 @@
     - <https://programmers.co.kr/learn/courses/30/lessons/42584>
   - 한수민
     - 캐시
-    - <https://programmers.co.kr/learn/courses/30/lessons/12982>
-
-
+    - <https://programmers.co.kr/learn/courses/30/lessons/17680>
+  - 장지창 
+    - 스킬트리
+    - <https://programmers.co.kr/learn/courses/30/lessons/49993>
+  - 조예지 
+    - N진수 게임
+    - <https://programmers.co.kr/learn/courses/30/lessons/17687>
+  - 한수민 
+    - <https://programmers.co.kr/learn/courses/30/lessons/17680>
+  - 고기훈
+    - 탑
+    - <https://programmers.co.kr/learn/courses/30/lessons/42588>
 
 ## 회고
 
@@ -219,6 +228,14 @@ print(c2.most_common(3))
   - `None`을 반환하는 함수는 후에 호출할 때 해당 값이 `None`인지 평가해줘야함 ( `if return_none_or_value() == None else…`)
   - 코드를 읽는 사람이 왜 `None`을 반환하는지 명확하게 유추할 수 없음 -> `raise CustomException`을 발생시켜서 명확히 어떤 상황인지 명시하는게 
 
+#### 1/23
+
+##### python sort 에서 사용하는 알고리즘
+- tim sort
+- <https://github.com/soomtopia/algorithm-study/blob/master/doc/timsort.md>
+
+##### clean code 
+- <https://planjang.tistory.com/229>
 
 
 > 이전 스터디 기록은 README_OLD로 옮겼습니다.
