@@ -218,3 +218,228 @@ def find_next_index(idx, count):
 
 완전 짧게 클린해짐! 
 
+
+## 3. 스킬트리
+
+##### 문제 요약
+
+input 값의 알파벳 순서대로 다른 알파벳이 진행되는지 check 
+
+##### 제한 조건
+
+C → B → D 라면 CBD로 표기합니다
+"CBD"	["BACDE", "CBADF", "AECB", "BDA"]	2
+##### 입출력 예 설명
+
+- BACDE: B 스킬을 배우기 전에 C 스킬을 먼저 배워야 합니다. 불가능한 스킬트립니다.
+- CBADF: 가능한 스킬트리입니다.
+- AECB: 가능한 스킬트리입니다.
+- BDA: B 스킬을 배우기 전에 C 스킬을 먼저 배워야 합니다. 불가능한 스킬트리입니다.
+
+
+#### 내가 짠 코드 
+```python
+def solution(skill, skill_trees):
+    count = 0
+    for token in skill_trees:
+        if check_right_skill_tree(token, skill):
+            count += 1
+    return count
+
+def check_right_skill_tree(token, skill):
+    stack = []
+    for char in token:
+        if char in skill:
+            if skill.index(char) != len(stack):
+                return False
+            stack.append(char)
+    return True
+```
+
+##### 알게된점 
+다른사람 풀이 코드를 보니, for 는 else 를 제공해서, break 로 안짤린 경우에 else 가 실행된다함! 우와! 테스트 해서 고치려 해봤더니 잘 안되니... 
+
+
+### 코드 리뷰
+break 를 사용해서 처리하려했으나, 원하는 코드가 작성되지 않아 메서드를 따로 빼 false 처리를 했다.
+
+하지만 지창이가 저번에 말했던 클린코드 중, 3번 이상 인덴트가 들어가는 부분에 고쳐야 한다는게 마음에 남는다. 개선해볼 필요가 있음!
+
+
+## 4. 구명보트 
+
+greedy 문제 
+구명 보트에 몇명 타는가에 대한 문제
+
+내가 짠 코드 -> 효율성 검사 에서 실패 
+```python
+def solution(people, limit):
+    answer = 0
+    people.sort()
+    while(len(people) != 0):
+        rest_weight = limit
+        rest_weight -= people.pop()
+        try: 
+            if rest_weight >= people[0]: 
+                del people[0]
+        except: pass
+        answer += 1
+    return answer
+```
+
+##### 고친코드
+
+```python
+def solution(people, limit):
+    answer = 0
+    begin, end = 0, len(people)-1
+    people.sort()
+    while(start <= end):
+        rest_weight = limit
+        rest_weight -= people[end]
+        end -=1 
+        if rest_weight >= people[begin]: 
+            start += 1
+        answer += 1
+    return answer
+```
+
+##### 다른사람들의 코드를 보고 개선한 코드
+
+하..
+
+```python
+def solution(people, limit):
+    answer = 0
+    begin, end = 0, len(people)-1
+    people.sort()
+    while(begin <= end):
+        if people[begin] + people[end] <= limit: 
+            begin += 1
+        end -= 1
+        answer += 1
+    return answer
+```
+
+#### 알게 된 점 
+
+`del people[0]` 이 O(N)의 성능을 내기 떄문에 속도 면에서 - 를 먹었다. pop도 O(N)이었다! 그래서 index 비교로 변경해서 효율성 부분을 통과했다
+
+
+## 5.다리를 지나는 트럭
+
+<https://programmers.co.kr/learn/courses/30/lessons/42583>
+
+여러분 도와주세여.. test case 5가 시간 초과가 뜹니다 ㅠㅡㅜ
+
+```python
+from collections import Counter, deque
+def solution(bridge_length, weight, truck_weights):
+    time= 0
+    bridge = deque([0] * bridge_length, maxlen=bridge_length)
+    truck_weights.reverse()  # nlogn 
+    now = 0
+    while(truck_weights): # n 
+        next_truck = truck_weights[-1] 
+        if sum(bridge) + next_truck <= weight: 
+            bridge.append(next_truck) # O(1)
+            truck_weights.pop() # O(1)
+        else:
+            bridge.append(0)
+            if sum(bridge) + next_truck <= weight:
+                bridge.pop()
+                continue
+        time += 1    
+    return time + len(bridge)
+```
+고친코드
+
+```python
+# programmers lv2 다리를 지나는 트럭
+# https://programmers.co.kr/learn/courses/30/lessons/42583
+def solution(bridge_length, max_weight, truck_weights):
+    bridge = deque([0]*bridge_length, maxlen=bridge_length)
+    bridge_current_weight = 0
+    time = 0
+    truck_weights.reverse()
+    while truck_weights:
+        time += 1
+        next_truck = bridge.popleft()
+        bridge_current_weight -= next_truck
+        if bridge_current_weight + truck_weights[-1] > max_weight:
+            bridge.append(0)            
+        else:
+            truck = truck_weights.pop()
+            bridge.append(truck)
+            bridge_current_weight += truck
+    while bridge_current_weight > 0:
+        time += 1
+        next_truck = bridge.popleft()
+        bridge_current_weight -= next_truck
+    return time
+```
+
+
+## 6. 타겟 넘버
+
+dfs 를 공부해야겠다 생각함
+
+내가 짠 코드 
+```python 
+# programmers lv2 타겟넘버
+# https://programmers.co.kr/learn/courses/30/lessons/43165
+# 별로인 내코드
+from itertools import permutations, combinations
+def solution(numbers, target):
+
+    idx = []
+    answer = 0
+    for i in range(len(numbers)):
+        idx.append(i)
+
+    sumdata = sum(numbers)
+    for i in range(len(numbers)+1):
+        combination = [list(number) for number in combinations(idx, i)]
+        for minuslist in combination:
+            minusdata = 0
+            for number in minuslist:
+                minusdata += numbers[number] 
+            if (sumdata - (minusdata * 2)) == target:
+                answer += 1
+    return answer
+```
+
+깔끔 recursive code
+
+```python
+def solution(numbers, target):
+    if not numbers and target == 0:
+        return 1
+    elif not numbers:
+        return 0
+    return solution(numbers[1:], target-numbers[0]) + solution(numbers[1:], target+numbers[0]) 
+```
+
+## 7. 주식 가격 
+ 
+stack 관련 문제라는데, 이렇게 풀었당. 비슷한 코드에서 스택을 구현한거보다 이게 2배 느리다는데 왤까..?
+```python
+# programmes lv2. 주식가격 
+# https://programmers.co.kr/learn/courses/30/lessons/42584
+from collections import deque
+def solution(prices):
+    size = len(prices)
+    prices = deque(prices)
+    answer = []
+    while(prices):
+        count = 0
+        current_price = prices.popleft()
+        for next_price in prices:
+            if current_price <= next_price:
+                count +=1
+            else:
+                count +=1
+                break
+        answer.append(count)
+    return answer
+```
