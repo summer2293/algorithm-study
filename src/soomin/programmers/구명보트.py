@@ -11,7 +11,3 @@ def solution(people, limit):
         end -= 1
         answer += 1
     return answer
-
-if __name__ == "__main__":
-    solution(people, limit)
-    

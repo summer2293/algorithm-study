@@ -421,7 +421,7 @@ def solution(numbers, target):
 ```
 
 ## 7. 주식 가격 
- 
+
 stack 관련 문제라는데, 이렇게 풀었당. 비슷한 코드에서 스택을 구현한거보다 이게 2배 느리다는데 왤까..?
 ```python
 # programmes lv2. 주식가격 
@@ -443,3 +443,34 @@ def solution(prices):
         answer.append(count)
     return answer
 ```
+
+
+
+## 8. 쇠 막대기
+
+![쇠막대기](https://grepp-programmers.s3.amazonaws.com/files/ybm/dbd166625b/d3ae656b-bb7b-421c-9f74-fa9ea800b860.png)
+
+()가 만났을때, 양쪽 인덱스 차이가 _-1_ 일경우, 레이저가 된다. 이때는 레이저에서 잘린 왼쪽스틱의 값이 발생한다. 
+
+아닐경우, 스틱이 끝나는 지점이 되는데, 오른쪽 잘린 스틱 +1 값을 더해준다.
+
+내가 짠 코드
+
+```python
+# programmers lv2 쇠막대기
+# https://programmers.co.kr/learn/courses/30/lessons/42585
+def solution(arrangement):
+    answer = 0
+    stick = []
+    for idx, value in enumerate(arrangement): # O(N)
+        if value == "(": 
+            stick.append(idx)
+        if stick and value == ")":
+            right, left = idx, stick.pop()
+            if right - left == 1: 
+                answer += len(stick)
+            else: 
+                answer += 1
+    return answer
+```
+

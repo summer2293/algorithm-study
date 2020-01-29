@@ -2,7 +2,6 @@
 # https://programmers.co.kr/learn/courses/30/lessons/42584
 from collections import deque
 def solution(prices):
-    size = len(prices)
     prices = deque(prices)
     answer = []
     while(prices):
