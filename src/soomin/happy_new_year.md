@@ -474,3 +474,110 @@ def solution(arrangement):
     return answer
 ```
 
+
+
+
+
+## 9. 정수 삼각형
+
+![img](https://grepp-programmers.s3.amazonaws.com/files/production/97ec02cc39/296a0863-a418-431d-9e8c-e57f7a9722ac.png)
+
+숫자를 좌우로내려가면서 나오는 최대값이 뭔지 리턴하면됨. 
+
+처음에는 재귀를 썼다. 위에서 아래 내려가면서 max 값을 체크하면서 풀었으나.. 시간 초과됨 ㅠㅡㅠ
+
+내가 짠 코드 
+
+```python
+from collections import deque
+
+def solution(triangle):
+    for col in range(1, len(triangle)):
+        for row in range(len(triangle[col])):
+            
+            if row == 0: 
+                triangle[col][row] += triangle[col-1][row]
+            elif row+1 == len(triangle[col]):
+                triangle[col][row] += triangle[col-1][row-1]
+            else:
+                triangle[col][row] += max(triangle[col-1][row], triangle[col-1][row-1])
+    return max(triangle[-1])
+```
+
+대박 코드 한줄!
+
+```python
+solution = lambda t, l = []: max(l) if not t else solution(t[1:], [max(x,y)+z for x,y,z in zip([0]+l, l+[0], t[0])])
+```
+
+
+## 10. 기능 개발
+
+개발이 완료되서 출시하는 값의 갯수를 리턴하면됨. 
+근데 순차적으로 되야해서
+
+progresses	speeds	return
+[93,30,55]	[1,30,5]	[2,1]
+이렇게 들어왔을때 
+
+93 은 하루에 1퍼 씩 완성 되니까 7일이걸리고, 30 은 하루에 30퍼씩 완성 되니까 4일이 걸리는데, 첫번째 작업이 완성되지않아 기다렸다가 같이 출시를 해주는거.
+
+#### 내가 짠 코드 
+
+```python
+#!/bin/python3
+import pytest
+
+@pytest.mark.parametrize("progresses, speeds, expected", [
+    ([93,30,55],[1,30,5],[2,1]),
+    ([93, 30, 55, 60, 40, 65], [1, 30, 5 , 10, 60, 7], [2,4]),
+    ([40, 93, 30, 55, 60, 65], [60, 1, 30, 5 , 10, 7], [1, 2, 3]),
+])
+
+
+def test_simple(progresses, speeds, expected):
+    assert solution(progresses, speeds) == expected
+
+COMPLETE = 100
+def solution(progresses, speeds):
+    answer = []
+    complete_days = []
+    for i,progress in enumerate(progresses):
+        days = (COMPLETE - progress) // speeds[i]
+        if (COMPLETE - progress) % speeds[i] > 0: days += 1
+        complete_days.append(days)
+    
+    flag, count = 0, 0
+    for i,v in enumerate(complete_days):
+        if i == 0:
+            flag = complete_days[i]
+            continue
+        if complete_days[i] <= flag: count += 1
+        else:
+            answer.append(count+1)
+            flag = complete_days[i]
+            count = 0
+    answer.append(count+1)
+    return answer
+```
+
+잘짰다고 생각한 다른사람 풀이. 명확한 것 같다.
+
+```python
+def solution(progresses, speeds):
+    answer = []
+    time = 0
+    count = 0
+    while len(progresses)> 0:
+        if (progresses[0] + time*speeds[0]) >= 100:
+            progresses.pop(0)
+            speeds.pop(0)
+            count += 1
+        else:
+            if count > 0:
+                answer.append(count)
+                count = 0
+            time += 1
+    answer.append(count)
+    return answer
+```
