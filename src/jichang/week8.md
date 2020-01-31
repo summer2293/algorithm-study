@@ -234,3 +234,18 @@ def test_change_uid_to_name():
                               'uid1234': 'Muzi'}) == "Muzi님이 들어왔습니다."
 
 ```
+
+```python
+# JadenCase
+def make_JadenCase_string(s):
+    splited_string = s.split(" ")
+    
+    JadenCase_list = []
+    for word in splited_string:
+        if word:
+            JadenCase_list.append(word[0].upper() + word[1:].lower())
+        else:
+            JadenCase_list.append('')
+
+    return ''.join([word+' ' for word in JadenCase_list])[:-1]
+```
