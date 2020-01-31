@@ -46,13 +46,6 @@ def test_make_correct_bracket_string():
     assert make_correct_bracket_string("(()())()") == "(()())()"
     assert make_correct_bracket_string(")(()()()") == "(()()())"
 
-    """
-    )(
-    )()()(
-
-    ( ()()() )
-    """
-
 
 def test_is_correct_bracket():
     assert is_correct_bracket("(())") == True
