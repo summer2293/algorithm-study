@@ -1,4 +1,4 @@
-
+# https: // programmers.co.kr/learn/courses/30/lessons/60058
 def flip(brackets):
     brackets = brackets.replace("(", "t")
     brackets =  brackets.replace(")", "(")

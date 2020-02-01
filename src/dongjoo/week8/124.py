@@ -1,7 +1,8 @@
+# https: // programmers.co.kr/learn/courses/30/lessons/12899
 remainder_dict = {0:'4', 1:'1', 2:'2'}
 
 def solution(n):
-    print(n, end=' ')
+    # print(n, end=' ')
     if not n:
         return '0'
     if n == 3:
@@ -30,9 +31,10 @@ def recursive_ternary(n):
             return '4' + remainder
 
 
-
 for i in range(1,30):
     print(solution(i))
+
+# div mod 쓰면 좋음
 
 # test ternary correctness
 # print(recursive_ternary(102), 102)
