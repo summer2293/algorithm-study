@@ -118,7 +118,7 @@
   - 1/22일 서울대입구 7시30분 변경
 
 
-## 2020/01/25
+## 2020/02/01
 
 - 1/25일 2주차 : 공통 4문제 + 개인문제 1문제 
 
@@ -145,11 +145,45 @@
   - 조예지 
     - N진수 게임
     - <https://programmers.co.kr/learn/courses/30/lessons/17687>
-  - 한수민 
-    - <https://programmers.co.kr/learn/courses/30/lessons/17680>
+
   - 고기훈
     - 탑
     - <https://programmers.co.kr/learn/courses/30/lessons/42588>
+
+## 2020/02/08
+
+- 2/8일 3주차 : 공통 3문제 + 개인문제 1문제 
+
+- ##### 파일 명: __week9.md__ 
+
+- ##### 공통문제
+
+- 단어변환 :<https://programmers.co.kr/learn/courses/30/lessons/43163>
+
+- 베스트 앨범: <https://programmers.co.kr/learn/courses/30/lessons/42579>
+
+- N-Queen: <https://programmers.co.kr/learn/courses/30/lessons/12952>
+
+- ##### 개별문제
+
+  - 이동주 
+    - 추석트래픽
+    - <https://programmers.co.kr/learn/courses/30/lessons/17676>
+  - 한수민
+    - 디스크컨트롤러
+    - <https://programmers.co.kr/learn/courses/30/lessons/42627>
+  - 장지창 
+    - 셔틀버스
+    - <https://programmers.co.kr/learn/courses/30/lessons/17678>
+  - 조예지 
+    - N진수 게임
+    - 
+  - 김선우 
+    - 네트워크
+    - <https://programmers.co.kr/learn/courses/30/lessons/43162>
+  - 고기훈
+    - 여행경로
+    - <https://programmers.co.kr/learn/courses/30/lessons/43164>
 
 ## 회고
 
@@ -231,11 +265,73 @@ print(c2.most_common(3))
 #### 1/23
 
 ##### python sort 에서 사용하는 알고리즘
-- tim sort
+- tim sort 알고리즘
 - <https://github.com/soomtopia/algorithm-study/blob/master/doc/timsort.md>
 
 ##### clean code 
 - <https://planjang.tistory.com/229>
+
+#### 2/1
+
+##### if i in city():
+
+```python
+        if city in memory:  # deque()
+            memory.remove(city) 
+            runtime += CACHE_HIT
+        else: 
+            runtime += CACHE_MISS
+```
+
+이런 in 작업에서 deque(), list() 는 선형 시간(O(N)) 을 가지지만, Set 타입의 경우 상수시간(O(1))을 가진다. 따라서 set 으로 작업하면 속도를 줄일 수 잇다. 
+
+##### divmod() - 몫과 나머지 
+
+알고리즘 문제를 풀다 보면, 정수를 나눈 몫과 나머지를 구해야 할 때
+
+```python
+ q, r = divmod(n-1, 3) # q 몫 r 나머지 
+```
+
+##### .startswith()
+
+skill이 `"cbd"` 일 때, pre_skill 시작 문자열이 c or cb or cbd 가 맞는지 check 해준다. 
+
+```python
+skill.startswith(pre_skill)
+```
+
+##### 재귀함수를 언제 쓰면 좋을 까?
+
+merge와 같이 1/2 로 줄어드는 방식에 사용하면 좋다. 하지만, 하나만 떨어트리는 형식, input recursion depth 가 800~100 사이여서, 메모리 자체에서 depth 를 걸기 때문에 이런 방식에는 안좋다. 
+
+다른 언어에는 __tail recursion__ 이 존재한다. 꼬리 재귀는 밑에 쌓는게 아니라, depth 를 차지하지 않는다.
+
+##### 비추천의 의견 
+
+협업을 하는 상황에서 재귀로 만들어 놓을때 다른 사람들이 이거 보고 수정할 때, 이게 재귀함수인지 모르는 케이스가 있다. 재귀함수는 협업할때는 안좋다고 지양하는 걸로 얼핏 들었음.
+
+##### sys.getrecursionlimit() 
+
+내 시스템의 스택을 확인할 수있다.
+
+```python
+>>> import sys
+>>> sys.getrecursionlimit() 
+1000
+```
+
+##### sys.setrecursionlimit() 
+
+내 시스템의 스택 설정을 변경한다 
+
+#####  x,y,z = record[i].split(' ')
+
+배열로 받지 않고, 고정 값이면 이렇게 받을 수 있다. 오픈 채팅방의 경우 "이름", "uid", "상태" 값의 고정된 3 값이 반복되는 것으로 정의되는데, 이럴때 쓰면 훨씬 직관적인 코드를 짤 수 있을 것 같다.
+
+##### a, b = b, a
+
+다른 언어와 달리 _python_ 은 swap 이 가능하다.
 
 
 > 이전 스터디 기록은 README_OLD로 옮겼습니다.
