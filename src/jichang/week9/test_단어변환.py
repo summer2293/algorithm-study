@@ -1,14 +1,3 @@
-"""
-hit가 변할 수 있는 것들을 queue에 넣는다.
-hot
-
-hot가 변할 수 있는 것 들을 queue에 넣는다.
-dot, lot
-
-dot, lot가 변할 수 있는 것들을 queue에 넣는다.
-
-"""
-
 # 단어 변환 https://programmers.co.kr/learn/courses/30/lessons/43163
 def convert_words(begin, target, words):
     if target in words:

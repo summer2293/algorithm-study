@@ -5,10 +5,11 @@
 """
 import operator
 
+
 def best_album(genres, plays):
     best_genre = best_genres(genres, plays)
-    best_album_songs = best_songs(best_genre, genres, plays)
-    return best_album_songs
+    return best_songs_by_genres(best_genre, genres, plays)
+
 
 def best_genres(genres, plays):
     songs = dict()
@@ -17,54 +18,53 @@ def best_genres(genres, plays):
             songs[genre] += play
         except:
             songs[genre] = play
-    
-    sorted_songs = sorted(songs.items(), key=operator.itemgetter(1), reverse=True)
+
+    sorted_songs = sorted(
+        songs.items(), key=operator.itemgetter(1), reverse=True)
     sorted_songs = [i[0] for i in sorted_songs]
     return sorted_songs
-    
 
-def best_songs(best_genre, genres, plays):
-    best_song_index = []
-    for b_genre in best_genre:
-        songs_for_best_genre = []
-        for index, (genre, play) in enumerate(zip(genres, plays)):
-            if b_genre == genre:
-                if songs_for_best_genre:
-                    if play > songs_for_best_genre[-1][1]:
-                        if len(songs_for_best_genre) == 1:
-                            songs_for_best_genre.insert(0, (index, play))
-                        else:
-                            if len(songs_for_best_genre) == 2:
-                                if songs_for_best_genre[0][1] < play:
-                                    songs_for_best_genre.insert(0, (index, play))
-                                    songs_for_best_genre.pop()
-                                else:
-                                    songs_for_best_genre.pop()
-                                    songs_for_best_genre.append((index, play))
-                else:
-                    songs_for_best_genre.append((index, play))
-        for song in songs_for_best_genre:
-            best_song_index.append(song[0])
-    return best_song_index
+
+def best_songs_by_genres(sorted_songs, genres, plays):
+    songs = dict()
+    best_song_list = []
+    for index, (genre, play) in enumerate(zip(genres, plays)):
+        try:
+            songs[genre].append((index, play))
+        except:
+            songs[genre] = [(index, play)]
+
+    for best_genre in sorted_songs:
+        genre_song_list = songs[best_genre]
+        sorted_specific_genre_song = sorted(genre_song_list, reverse=True, key=lambda l:l[1])
+        for index in range(min(2, len(sorted_specific_genre_song))):
+            if sorted_specific_genre_song[index]:
+                best_song_list.append(sorted_specific_genre_song[index][0])
+    return best_song_list
 
 
 def test_best_album():
     assert best_album(["classic", "pop", "classic", "classic", "pop"],
                       [500, 600, 150, 800, 2500]) == [4, 1, 3, 0]
+    assert best_album(["classic", "pop", "classic", "classic", "pop"],
+                      [500, 600, 150, 800, 500]) == [3, 0, 1, 4]
+    assert best_album(["classic", "pop", "classic", "classic"],
+                      [500, 600, 150, 800, 500]) == [3, 0, 1]
 
 def test_best_genres():
     assert best_genres(["classic", "pop", "classic", "classic", "pop"],
-                      [500, 600, 150, 800, 2500]) == ['pop', 'classic']
+                       [500, 600, 150, 800, 2500]) == ['pop', 'classic']
     assert best_genres(["classic", "pop", "classic", "classic", "pop"],
                        [500, 600, 150, 800, 500]) == ['classic', 'pop']
 
-def test_best_songs():
-    assert best_songs(["pop", "classic"], ["classic", "pop", "classic", "classic", "pop"],
-                      [500, 600, 150, 800, 2500]) == [4, 1, 3, 0]
+
+def test_best_songs_by_genres():
+    assert best_songs_by_genres(['pop', 'classic'], ["classic", "pop", "classic", "classic", "pop"],
+                       [500, 600, 150, 800, 2500]) == [4, 1, 3, 0]
 
 if __name__ == '__main__':
     best_songs(['pop', 'classic'], ["classic", "pop", "classic", "classic", "pop"],
-                      [500, 600, 150, 800, 2500]) #== [4, 1, 3, 0]
+               [500, 600, 150, 800, 2500])  # == [4, 1, 3, 0]
 
 
 """
