@@ -150,9 +150,9 @@
     - 탑
     - <https://programmers.co.kr/learn/courses/30/lessons/42588>
 
-## 2020/02/08
+## 2020/02/15
 
-- 2/8일 3주차 : 공통 3문제 + 개인문제 1문제 
+- 2/15일 3주차 : 공통 3문제 + 개인문제 1문제 
 
 - ##### 파일 명: __week9.md__ 
 
@@ -184,6 +184,27 @@
   - 고기훈
     - 여행경로
     - <https://programmers.co.kr/learn/courses/30/lessons/43164>
+
+## 2020/02/29
+
+  ⭐️ 4주차 남은 인원 전원 취뽀 달성! ⭐️
+
+- ##### 공통문제
+  
+  - 무지의 먹방 라이브: <https://programmers.co.kr/learn/courses/30/lessons/42891>
+  - 방의 갯수: <https://programmers.co.kr/learn/courses/30/lessons/49190>
+
+- ##### 개별 문제
+
+  - 한수민
+    - 도둑질
+    - <https://programmers.co.kr/learn/courses/30/lessons/42897>
+  - 김선우
+    - 징검다리
+    - <https://programmers.co.kr/learn/courses/30/lessons/43236>
+  - 이동주
+  - 장지창 
+
 
 ## 회고
 
