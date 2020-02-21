@@ -4,6 +4,8 @@
 
 4주간 프로그래머스 단계별 알고리즘 문제 스터디 진행방식 및 회고입니다.
 
+##### ⭐️경축⭐️ 지창, 동주, 수민 취뽀! 예이예!
+
 ## Rule  
 
 #### ⏱ 시간
@@ -203,7 +205,11 @@
     - 징검다리
     - <https://programmers.co.kr/learn/courses/30/lessons/43236>
   - 이동주
+    - 자동완성
+    - <https://programmers.co.kr/learn/courses/30/lessons/17685>
   - 장지창 
+    - 3xn 타일링
+    - <https://programmers.co.kr/learn/courses/30/lessons/12902>
 
 
 ## 회고
@@ -357,3 +363,25 @@ merge와 같이 1/2 로 줄어드는 방식에 사용하면 좋다. 하지만, �
 
 > 이전 스터디 기록은 README_OLD로 옮겼습니다.
 
+
+#### 2/15
+
+##### rsa 에 대해서
+
+인수분해에서 착안. 인수분해는 힘들다! 에서 나왔다. NP 문제
+
+##### web server 구조의 이해 
+
+> ##### runserver 역할
+>
+> - api 게이트웨이
+> - 리버스 프록시
+> - staic file
+>
+> start_response // environment 
+>
+> https://www.toptal.com/python/pythons-wsgi-server-application-interface>
+
+##### 파이썬 이모저모
+
+<https://planjang.tistory.com/230>
