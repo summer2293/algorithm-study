@@ -40,3 +40,11 @@ Thumbs.db
 ######################
 .vscode/
 settings.json
+
+
+# environments #
+######################
+/algo/
+
+
+
