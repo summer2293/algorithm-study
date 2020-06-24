@@ -34,7 +34,7 @@ def recursive_ternary(n):
 for i in range(1,30):
     print(solution(i))
 
-# div mod 쓰면 좋음
+# look into divmod
 
 # test ternary correctness
 # print(recursive_ternary(102), 102)
